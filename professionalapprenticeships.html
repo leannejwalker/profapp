@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <title>Jade Walker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://use.fontawesome.com/8b059409f7.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <script>
+
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }; 
+		
+  </script> <!--For the header-->
+  <div class="header">
+    <h1>Jade<br>
+    Walker</h1>
+    <h1 id="undertext">Photography | Technology</h1>
+  </div>
+  <div class="intro" id="top">
+    <h3>Contents</h3>
+  <nav>
+    <ul>
+      <li><a href="#setup">Setting up a hosting account</a></li>
+	  <br>
+      <li><a href="#dns">DNS Propagation</a></li>
+	  <br>
+      <li><a href="#webdes">Website design and layout</a></li>
+	  <br>
+      <li><a href="#gs">Web development: Gettings Started </a></li>
+	  <br>
+      <li><a href="#head">Web development: The Header </a></li>	  
+	  <br>
+      <li><a href="#tbp">Web development: The Big Picture</a></li>
+	  <br>
+      <li><a href="#aboutme">Web development: About Me</a></li>
+	  <br>
+      <li><a href="#ttl">Web development: The Three Links</a></li>
+	  <br>
+	  <li><a href="#ttl">Preview #1</a></li>
+	  <br>
+	  <li><a href="#contents">Web development: Content</a></li>
+	  <br>
+	  <li><a href="#htmlcss">Web development: HTML/CSS preview boxes</a></li>
+    </ul>
+  </nav>
+  </div>
+  <div class="intro">
+    <h3 class="h3" id=setup>Setting up a hosting account</h3>
+	<p>To create a hosting account for the website, I used Plesk, which is a hosting control panel. I will need to create a customer account to set up my domain and create a platform for my website. It will also allow me to complete tasks such as setting up FTP access and applying SSLs. I created a new customer account by pressing “Add a customer”.
+		<img src="img/pa/1/1.1.png" width="712" height="auto" alt="Add a Customer">
+		<br>
+	The first set of details are for accessing the customer account in Plesk. The second set of details are for the domain subscription. This sets up a set of properties for the website. 
+		<img src="img/pa/1/1.2.png" alt="Customer details">
+		<li>
+	Domain name: - This is where I will input the domain name I will be using for the website: leannejade.co.uk. When loading a website, the users computer will access the server via the IP, not the domain name. As IPs can be difficult to remember, the DNS (Domain Name System) translates the IP into a domain name. An example of this is Google. To access google.com, you can type google.com in the address bar. Alternatively, you could type in 142.250.186.142 or 142.250.186.164.
+		</li>
+		<br>
+		<li>
+	IPv4/IPv6 address: - This is where I allocated an IP address to the domain. I have a choice between a shared or a dedicated IP. A shared IP is where multiple websites and domains are hosted on the same IP, whereas a dedicated IP is where one website, or a singular domain with multiple websites are hosted on an IP of their own.
+		</li>
+		<br>
+		<li>
+	The username and password are for the FTP access. FTP (File Transfer Protocol) is the protocol which deals with file transfer. This can be between two LANs (local area networks) such as computers on the same network, or between a LAN and a WAN (wide area network) such as a computer and a server. This will allow me to transfer the website files from my computer to the web server.
+		</li>
+		<br>
+		<li>
+	The service plan outlines what resources from the server that the website can use. This allows for a range resources including the amount of disk space the website can use the number of mailboxes that can be allocated to the domain and the number of domains, subdomains and aliases that can be allocated. Service plans ensure that each website gets sufficient resources that it requires. 
+		</li>
+		<br>
+	</p>
+	<p>
+	I have now created my customer account.
+	<img src="img/pa/1/1.3.png" alt="Customer details">
+	</p>
+  </div>
+  
+  <div class="intro2">
+   <h3 class="h3" id=dns>DNS Propagation</h3>
+    <p>My next task is to make sure the domain is on the correct name server. Doing this ensures that I will be able to load the website files, hosted on Plesk, from the domain. This will then allow me to load the website files with the domain. At this moment in time, my domain leannejade.co.uk is currently pointing at my domain registrar, Namecheap’s name servers.
+	<br><br>
+	To change this, I will need to open both the DNS settings on Plesk, and the DNS settings on Namecheap. 
+	<br>
+    <br>
+	<img src="img/pa/2/2.1.png" alt="DNS settings">
+	The name server is listed as an NS record in the DNS settings. This is the only record I need to copy onto the DNS settings on the domain registrar. 
+	<br>
+    <br>
+	<img src="img/pa/2/2.2.png" alt="NS Records">
+	<li>
+	The name server is listed as an NS record in the DNS settings. The host will be an @ as the @ symbol represents the current domain name. Alternatively, I could add the domain name as the host (leannejade.co.uk).
+	</li>
+	<li>
+	The value is set to the name of the name server. The name server will also have a full stop at the end. If a full stop is not added to the end of the value, the record will automatically add the domain name afterwards (for example pl-ns2.jpcinet.co.uk.leannejade.co.uk). As it would no longer be pointing to the correct name servers, there would be an error when trying to load the website.
+	</li>
+	<li>
+	TTL (Time To Live) is how much time a data packet will “live” within the network before it is made redundant. This can be between 600 seconds (10 minutes) and 86400 seconds (24 hours). Automatic TTL will set the data packet lifespan to the default set by the domain registrar. Namecheap’s default is 1800 seconds (30 minutes).
+	</li>
+	</p>
+	<p>
+	Now that I have set up the account and changed the name servers, I will need to wait for the DNS to propagate. In the meantime, I will start designing and building the website. 
+	</p>
+  </div>
+  
+  <div class="intro">
+   <h3 class="h3" id=webdes>Website design and layout</h3>
+	<p>
+	As the website will be a portfolio, I will be creating a site that is simple and easy to navigate. I will be using HTML, PHP and CSS. It will include a basic colour palette, so that the website looks professional and slick. The colours on the website will be in hex so that it can work with HTML, PHP and CSS. Hex colour codes start with #. 
+		<img src="img/pa/3/3.1.png" alt="Main page">
+	On the landing page, I will have a large header, in faded light grey #758799), with my name as the header. I would like the header text to be in Roboto, which is a Google Font.
+	<br><br>
+	I could add a navigation bar at the top of the webpage, so that the user can access the different pages, however I feel that it would make the webpage more complicated and would move away from the slick design.  Instead, I chose to have the URLs to different webpages underneath the picture. 
+	<br><br>
+	I am debating whether I should have one set picture in the middle of the webpage, or if I should have a slideshow, where multiple pictures are viewed in a set order. If I were to go with this option, I could either choose a manual slide show, where the user would have to press buttons to be able to see each picture, or automatic, where the pictures are viewed on a timer. 
+	<br><br>
+	The pictures underneath the large picture element will be used as URLs, to navigate to the different portfolios I have. The pictures will be of the portfolio or an element of the portfolio linked. The URL to the portfolio is the picture, so no matter where the user clicks on the picture, the URL will load that webpage. 
+		<img src="img/pa/3/3.2.png" alt="Next page">
+	When the URL is clicked on, it will send the user to the portfolio that the picture represents. 
+	An example portfolio webpage is a simple design with the same title style, however with different text. Each page will have the title of the portfolio so that the user knows which page they have gone to. 
+	<br><br>
+	As the page is for portfolio work, I will have a mixture of text and pictures. The text font will be Roboto to match the title. The text will be aligned to the left of the page however the headers will be centred.  
+	<br><br>	
+	The page will be a scroll page, and I may add a contents list at the top of the page, so that the user can find the part of the page they need quickly. 
+	<br><br>
+	I may add extra parts to the website as I go along, as I may find a better way to build or show something, however most of the elements I have shown I will be using. 
+	</p>
+  </div>
+  
+  <div class="intro2">
+   <h3 class="h3" id=gs>Web development: Getting Started</h3>
+    <p>The first step is to create the files and folders where the website will be built in. I created a main folder called “leannejade.co.uk” and created a file called “index.html”. This is where the landing page will be. If the file had a different name to “index.html”, it would not be recognised by the server as the main page, and there would be an error. I also created a file called css, which I will be using later. I opened the html file in Notepad ++ and started building the first page of the website.
+	<br>
+	<br>
+	<img src="img/pa/4/4.1.png" alt="The making of index.html">
+	<br>
+	To start the webpage, I need to set the doctype declaration. When the page is open, this line of code tells the browser what language the code is written in. This then allows the browser to translate the code into readable text. All HTML webpages need the doctype declaration. 
+	The second line of code defines the language or country combination that the text is written in. 
+	<br><br>
+	</p>
+	<div class="boxed">
+		<span class="tagnamecolor" style="color:black">&lt!doctype html&gt;<br><span class="tagnamecolor" style="color:mediumblue">&lthtml<span class="attributecolor" style="color:red"> lang</span>="en-gb"&gt;</span></span>
+	</div>
+	<p>
+	<br>
+	The next part of the code is the head tag. This tag holds all the metadata, or information of the contents of the webpage. 
+	<br><br>
+	</p>
+	<div class="boxed">
+		<span class="tagnamecolor" style="color:mediumblue">&lthead&gt;<br>&nbsp;&nbsp;&nbsp;&lttitle&gt;
+		<span class="tagcolor" style="color:black">Jade Walker</span>&lt/title&gt;<br>&nbsp;&nbsp;&nbsp;&ltmeta 
+		<span class="attributecolor" style="color:red">charset</span>="utf-8"&gt;<br>&nbsp;&nbsp;&nbsp;&ltmeta&gt;
+		<span class="attributecolor" style="color:red">name</span>="viewport"
+		<span class="attributecolor" style="color:red">content</span>="width=device-width, initial-scale=1"&gt;<br>&nbsp;&nbsp;&nbsp;&ltlink&gt;
+		<span class="attributecolor" style="color:red">rel</span>="stylesheet" 
+		<span class="attributecolor" style="color:red">href</span>="css/custom.css"&gt;<br> &lthead&gt;
+		</span>
+	</div>
+	<p>
+	<br>
+	The first line of the head tag is the page title. This is the text shown on the tab bar at the top of the browser. This identifies what the site is, so if the user change tabs, they can get to the right one quickly. I chose to create a < div > tag, so that I could use the class attribute to give the header and the header text different styles. The h1 tag will hold the header text.
+	<br><br>
+	</p>
+	<div class="boxed">
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv 
+		<span class="attributecolor" style="color:red">class</span>="header"&gt;<br>&nbsp;&nbsp;&nbsp;&lth1&gt;
+		<span class="tagcolor" style="color:black">Jade Walker</span>&lt/h1&gt;<br>&lt/div&gt;
+	</div>
+	<p>
+	<br>
+	How it is time to see how the website looks.
+	<br>
+	</p>
+	<img src="img/pa/4/4.5.png" alt="Tab">
+	<img src="img/pa/4/4.6.png" alt="Website preview">
+	<p>
+	The page title shows on the tab bar. This is exactly what I wanted. Other than adding a logo next to my name, no further action is needed on that element of the site. However, when looking at the webpage, I can see that the text sits to the left of the page and is quite small. As well as the header not being correct, I am also missing the band of colour at the top. This is because I have yet to create a CSS file and style them both.
+	<img src="img/pa/4/4.7.png" alt="Making of custom.css">
+	In my CSS folder I made previously, I have created a custom.css file. This is the file we linked back in the &lthead&gt; tag. CCS means “Cascading Style Sheet” and means that any styles in the file are used across the site. For example, if I have a paragraph (&ltp&gt;) with a font of 12px in the style sheet, every piece of text inside a &ltp&gt; tag across the site will have 12px font.
+	<br><br>
+	Firstly, I wanted the h1 tag, which holds my text, to be centred. ‘text-align’ is a CSS style which moves any text with the style applied to any position on the page. ‘text-align: center’ means that the text will be in the centre of the page.
+	</p>
+	<div class="boxed">
+		<span class="tagnamecolor" style="color:mediumblue">h1
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">text-align
+		<span class="tagcolor" style="color:black">: center;</span><br></span>&rbrace;</span></span>
+	</div>
+	<p>
+	<br>
+	Now, lets go back to view the page to see what happens.
+	</p>
+	<img src="img/pa/4/4.9.png" alt="Website preview">
+	<p>
+	Although I can see that the text is in the middle of the page, it is quite difficult to read. The default is 2em, but I would like it to be 4em. Em is a unit of text size. To change the text size, I need to go into the h1 tag again in the style sheet and add another attribute. ‘font-size’ is the size of the font and will recognise many different units of length including px, em and percentages. 
+	<br><br>
+	</p>
+		<div class="boxed">
+		<span class="tagnamecolor" style="color:mediumblue">h1
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;&nbsp;<span class="tagnamecolor" style="color:#8B4BBE">text-align
+		<span class="tagcolor" style="color:black">: center;</span><br>&nbsp;&nbsp;&nbsp;font-size
+		<span class="tagcolor" style="color:black">: 4em;</span><br></span>&rbrace;</span></span>
+	</div>
+	<img src="img/pa/4/4.11.png" alt="Website preview">
+	<p>
+	Now that I had gotten the basics out of the way, I decided to go ahead and start making the website look more appealing.
+	</p>
+  </div>
+  <div class="intro">
+  <h3 class="h3" id=head>Web development: The Header</h3>
+	<p>
+	I wanted to make the header look fancy, but not too complicated. With the plan I had, I decided I wanted the header text to be to one side, with some text underneath it. Having a &ltbr&gt; tag between my first and last name seperates the two on different lines, and makes it look more professional. I then added text underneath my name. I had to create an ID called "undertext" in order to change the font size. The ID gives a specific item a different style from the rest of the same items in the same tag. This means no other text in the &lth1&gt; tag will be affected.
+	<br><br>
+	</p>
+	<div class="boxed">
+	<h4>HTML</h4><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv 
+		<span class="attributecolor" style="color:red">class</span>="header"&gt;<br>&nbsp;&nbsp;&nbsp;&lth1&gt;
+		<span class="tagcolor" style="color:black">Jade</span><br>&nbsp;&nbsp;&nbsp;&ltbr&gt;
+		<span class="tagcolor" style="color:black">Walker</span>&lt/h1&gt;
+		<br>&nbsp;&nbsp;&nbsp;&lth1&gt;
+		<span class="attributecolor" style="color:red">id</span>="undertext"&gt;
+		<span class="tagcolor" style="color:black">Photography | Technology</span>&lt/h1&gt;<br>&lt/div&gt;</span>
+	</div>
+	<br>
+	<p>
+	In the CSS file and in the h1 tag, I had to make sure everything had been in line, which is why I have various styles like "padding-top" which makes sure that there is enough padding above the text and the top of the page. I wanted the text to have spacing between the letters, so I used "letter-spacing" and set it to 9px. I also set the text colour to #ffffff, which is hex code for the colour white.<br><br>
+	In the .header attribute, I have a few styles that should make sure that the header spans the whole page. "width: 100%" is the style that is responsible for this. "position:fixed" is the style that should keep the header at the top of the page and visible even when scrolling. I have decided to have the background set to #000000, which is hex for the colour black. This will mean that the text in the h1 tag will be easy to read.<br><br>
+	The undertext ID is in the h1 tag. This means any attributes, such as text size, that are in the h1 tag should be the same for anything with the ID tag unless specifically mentioned. I am needing the text size for the text in the undertext ID to be smaller than the text in the h1 tag, however I want everything else, such as text colour, to stay the same.<br><br>
+	</p>
+	<div class="boxed">
+	<h4>CSS</h4><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">h1
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">font-size
+		<span class="tagcolor" style="color:black">: 4em;</span><br>&nbsp;&nbsp;&nbsp;color
+		<span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;letter-spacing
+		<span class="tagcolor" style="color:black">: 9px;</span><br>&nbsp;&nbsp;&nbsp;height
+		<span class="tagcolor" style="color:black">: 1em;</span><br>&nbsp;&nbsp;&nbsp;text-align
+		<span class="tagcolor" style="color:black">: left;</span><br>&nbsp;&nbsp;&nbsp;margin-left
+		<span class="tagcolor" style="color:black">: 50px;</span><br>&nbsp;&nbsp;&nbsp;padding-top
+		<span class="tagcolor" style="color:black">: -50px;</span><br>&nbsp;&nbsp;&nbsp;padding-bottom
+		<span class="tagcolor" style="color:black">: 20px;</span></span><br>&rbrace;</span></span><br><br>
+		<span class="attributecolor" style="color:red">.header
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">padding
+		<span class="tagcolor" style="color:black">: 15px;</span><br>&nbsp;&nbsp;&nbsp;background
+		<span class="tagcolor" style="color:black">: #000000;</span><br>&nbsp;&nbsp;&nbsp;top
+		<span class="tagcolor" style="color:black">: 0;</span><br>&nbsp;&nbsp;&nbsp;margin
+		<span class="tagcolor" style="color:black">: -0.5em;</span><br>&nbsp;&nbsp;&nbsp;width
+		<span class="tagcolor" style="color:black">: 100%;</span><br>&nbsp;&nbsp;&nbsp;position
+		<span class="tagcolor" style="color:black">: fixed;</span><br></span>&rbrace;</span><br><br>
+		<span class="tagnamecolor" style="color:blue">
+		<span class="tagcolor" style="color:black">#</span>undertext
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">font-size
+		<span class="tagcolor" style="color:black">: 0.8em;</span></span><br>&rbrace;</span></span></span>
+	</div>
+	<p>
+	<br>
+	Now the page should have a fixed header with my name and and text underneath it. 
+	</p>
+	<img id=picborder src="img/pa/view/header.PNG" alt="This is the website header.">
+	<br>
+	</div>
+	 
+	<div class="intro2">
+	<h3 class="h3" id=tbp>Web development: The Big Picture</h3>
+	<p>
+	To create a big picture at the top of the site, I need to include an img tag, along with some attributes.
+	<br>
+	</p>
+	<div class="boxed">
+	<h4>HTML</h4><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">&ltimg 
+		<span class="attributecolor" style="color:red">class</span>="main"<span class="attributecolor" style="color:red"> src</span>=img/main.jpg<span class="attributecolor" style="color:red"> alt</span>="main"&gt;</span>
+	</div>
+	<br>
+	<p>
+	The img tag holds a class, which will allow me to style the image and style any other images within the class. src allows me to link the image that I would like to be viewed on the website. The alt identifies the picture when accessability tools are used on the website, such as screen readers. With the CSS file, I will be creating styles for the img tag and the .main class. For the image tag, I will need to make sure that it spans most of the page, with a small gap between the edge of the image and the edge of the site. This is what margin-top and margin-bottom is.
+	<br><br>
+	The .main class makes sure that specific picture fits with the rest of the page. 
+	</p>
+	<div class="boxed">
+	<h4>CSS</h4><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">img
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">max-width
+		<span class="tagcolor" style="color:black">: 200%;</span><br>&nbsp;&nbsp;&nbsp;max-height
+		<span class="tagcolor" style="color:black">: 200%;</span><br>&nbsp;&nbsp;&nbsp;display
+		<span class="tagcolor" style="color:black">: block;</span><br>&nbsp;&nbsp;&nbsp;margin
+		<span class="tagcolor" style="color:black">: 0 auto;</span><br>&nbsp;&nbsp;&nbsp;margin-bottom
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;margin-top
+		<span class="tagcolor" style="color:black">: 2em;</span></span><br>&rbrace;</span></span><br><br>
+		<span class="attributecolor" style="color:red">.main
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">max-width
+		<span class="tagcolor" style="color:black">: 90%;</span><br>&nbsp;&nbsp;&nbsp;max-height
+		<span class="tagcolor" style="color:black">: 30%;</span><br>&nbsp;&nbsp;&nbsp;display
+		<span class="tagcolor" style="color:black">: block;</span><br>&nbsp;&nbsp;&nbsp;margin
+		<span class="tagcolor" style="color:black">: 0 auto;</span><br>&nbsp;&nbsp;&nbsp;padding
+		<span class="tagcolor" style="color:black">: 5em;</span><br>&nbsp;&nbsp;&nbsp;margin-bottom
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;margin-top
+		<span class="tagcolor" style="color:black">: 10em;</span><br></span>&rbrace;</span></span<br><br>
+	</div>
+	<p>
+	<br>
+	This should now have a photo at the top of the page. 
+	</p>
+	<img id=picborder src="img/pa/4/4.15.png" alt="This is the website header."><br>
+	</div>
+	<div class="intro">
+	<h3 class="h3" id=aboutme>Web development: About Me</h3>
+	<p>
+	The next steps are to create an "About me" box, which should explain how I came to understand everything I learned. 
+	<br>
+	<br>
+	</p>
+	<div class="boxed">
+	<h4>HTML</h4><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
+		<span class="attributecolor" style="color:red">class</span>="intro"<br>&lth2&gt;<span class="attributecolor" style="color:black"> About Me </span>&lt/h2&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat. Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et. Donec placerat, augue sit amet egestas tristique, purus lacus rutrum orci, sed congue ante urna ut sapien. Etiam nec ex nisl. Sed volutpat erat at justo posuere, ut pharetra nulla tempus. In vehicula venenatis mattis. Nunc maximus venenatis suscipit. Nunc nisl quam, tristique sit amet felis ut, gravida semper turpis. Proin a egestas augue. In faucibus feugiat augue a blandit. Nullam eu leo suscipit, feugiat justo aliquam, tincidunt purus. Aenean sed libero sit amet neque scelerisque ullamcorper non eu felis. Suspendisse potenti. Donec tempor interdum hendrerit. Duis a dignissim ipsum, quis fermentum nibh. Maecenas et tellus arcu. Nunc et feugiat nunc, eu accumsan diam.</span>&lt/p&gt;<br>&lt/div&gt;
+	</div>
+	<br>
+	<p>
+	The whole of the "About Me" box will be held by the &ltdiv&gt; tag. It will also have a class, which means I can style the &ltdiv&gt; box.
+	The &lth2&gt; tag will hold the title, and will be styled differently than the rest of the text on the page.
+	The &ltp&gt; tag, holds the main text.
+	</p>
+	<br>
+	<div class="boxed">
+	<h4>CSS</h4><br><br>
+		<span class="tagnamecolor" style="color:red">.intro
+		<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">font-family
+		<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;colour
+		<span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background
+		<span class="tagcolor" style="color:black">: #000000;</span><br>&nbsp;&nbsp;&nbsp;padding
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top
+		<span class="tagcolor" style="color:black">: -15em;</span><br>&nbsp;&nbsp;&nbsp;margin
+		<span class="tagcolor" style="color:black">: -1em;</span></span><br>&rbrace;</span></span><br><br>
+	</div>
+	<p>
+	<br>
+	Now I should have a section of the website with an "About Me" section.
+	</p>
+	<img id=picborder src="img/pa/4/4.16.png" alt="This is the About Me page."><br>
+	</div>
+
+	
+	<div class="intro2">
+	<h3 class="h3" id=ttl>Web development: The Three Links</h3>
+	<p>
+	The next steps are to create an "About me" box, which should explain how I came to understand everything I learned. 
+	<br>
+	<br>
+	</p>
+	<div class="boxed">
+	<h4>HTML</h4><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
+		<span class="attributecolor" style="color:red">class
+		</span>="pictures"<span class="attributecolor" style="color:red"> id </span>="pic"&gt;
+		<br>&lta <span class="attributecolor" style="color:red">href</span>="photo.html"&gt;&ltimg <span class="attributecolor" style="color:red"> class</span>="main"<span class="attributecolor" style="color:red"> src </span>="img/world.jpg"<span class="attributecolor" style="color:red"> alt </span>="GCSE Photography 2016-2018"<br>&gt;&lt/a&gt;
+		<br>
+		</span>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
+		<span class="attributecolor" style="color:red">class
+		</span>="text"&gt;<br><span class="attributecolor" style="color:black">
+		&nbsp;&nbsp;GCSE Photography<br>
+		&nbsp;&nbsp;2016-2018
+		</span><br>
+		&lt/div&gt;
+		<br>&lt/div&gt;
+		</span>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
+		<span class="attributecolor" style="color:red">class
+		</span>="pictures"<span class="attributecolor" style="color:red"> id </span>="pic"&gt;
+		<br>&lta <span class="attributecolor" style="color:red">href</span>="photo.html"&gt;&ltimg <span class="attributecolor" style="color:red"> class</span>="main"<span class="attributecolor" style="color:red"> src </span>="img/light.jpg"<span class="attributecolor" style="color:red"> alt </span>="BTEC Level 3 Extended Diploma in IT"<br>&gt;&lt/a&gt;
+		<br>
+		</span>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
+		<span class="attributecolor" style="color:red">class
+		</span>="text"&gt;<br><span class="attributecolor" style="color:black">
+		&nbsp;&nbsp;BTEC Level 3<br>
+		&nbsp;&nbsp;Extended Diploma in IT
+		</span><br>
+		&lt/div&gt;
+		<br>&lt/div&gt;
+		</span>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
+		<span class="attributecolor" style="color:red">class
+		</span>="pictures"<span class="attributecolor" style="color:red"> id </span>="pic"&gt;
+		<br>&lta <span class="attributecolor" style="color:red">href</span>="photo.html"&gt;&ltimg <span class="attributecolor" style="color:red"> class</span>="main"<span class="attributecolor" style="color:red"> src </span>="img/world.jpg"<span class="attributecolor" style="color:red"> alt </span>="GCSE Photography 2016-2018"<br>&gt;&lt/a&gt;
+		<br>
+		</span>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
+		<span class="attributecolor" style="color:red">class
+		</span>="text"&gt;<br><span class="attributecolor" style="color:black">
+		&nbsp;&nbsp;Professional Apprenticeships<br>
+		&nbsp;&nbsp;Infrustructure Technician
+		</span><br>
+		&lt/div&gt;
+		<br>&lt/div&gt;
+		</span>	
+	</div>
+	<br>
+	<div class="boxed">
+	<h4>CSS</h4><br><br>
+		<span class="tagnamecolor" style="color:red">.main
+		<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">max-width
+		<span class="tagcolor" style="color:black">: 90%;</span><br>&nbsp;&nbsp;&nbsp;max-height
+		<span class="tagcolor" style="color:black">: 30%;</span><br>&nbsp;&nbsp;&nbsp;display
+		<span class="tagcolor" style="color:black">: block;</span><br>&nbsp;&nbsp;&nbsp;margin
+		<span class="tagcolor" style="color:black">: 0 auto;</span><br>&nbsp;&nbsp;&nbsp;padding
+		<span class="tagcolor" style="color:black">: 5em;</span><br>&nbsp;&nbsp;&nbsp;margin-bottom
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;margin-top
+		<span class="tagcolor" style="color:black">: 10em;</span></span><br>&rbrace;</span></span><br><br>
+		
+		
+		<span class="tagnamecolor" style="color:blue">
+		<span class="tagcolor" style="color:black">#</span>undertext
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">font-size
+		<span class="tagcolor" style="color:black">: 0.8em;</span></span><br>&rbrace;</span></span><br><br>
+		
+		
+		<span class="tagnamecolor" style="color:red">.pictures
+		<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">float
+		<span class="tagcolor" style="color:black">: left;</span><br>&nbsp;&nbsp;&nbsp;width
+		<span class="tagcolor" style="color:black">: 30%;</span><br>&nbsp;&nbsp;&nbsp;align-items
+		<span class="tagcolor" style="color:black">: center;</span><br>&nbsp;&nbsp;&nbsp;text-align
+		<span class="tagcolor" style="color:black">: center;</span></span><br>&rbrace;</span></span><br><br>
+		
+		
+		<span class="tagnamecolor" style="color:red">.text
+		<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">color
+		<span class="tagcolor" style="color:black">: #f2f2f2;</span><br>&nbsp;&nbsp;&nbsp;max-height
+		<span class="tagcolor" style="color:black">: 1.3em;</span><br>&nbsp;&nbsp;&nbsp;display
+		<span class="tagcolor" style="color:black">: block;</span><br>&nbsp;&nbsp;&nbsp;position
+		<span class="tagcolor" style="color:black">: relative;</span><br>&nbsp;&nbsp;&nbsp;top
+		<span class="tagcolor" style="color:black">: -5em;</span><br>&nbsp;&nbsp;&nbsp;font-family
+		<span class="tagcolor" style="color:black">: Roboto;</span></span><br>&rbrace;</span></span><br><br>
+
+	</div>
+	<p>
+	<br>
+	The website should now hold the three photos as links to their respective pages. 
+	</p>
+	<img id=picborder src="img/pa/4/4.17.png" alt="This is the About Me page."><br>
+	</div>
+	
+	<div class="intro">
+	<h3 class="h3" id=preview>Preview of Main Page</h3>
+	<img id=picborder src="img/pa/4/preview.png" alt="A preview of the main page.">
+	<p>
+	<br>
+	This is a preview of the main page of the website. I'm very happy with the progress I have made so far. The best part of the website is the header, as it's stuck in place, even when the user scrolls down. If I had to improve the website, I would add a picture carousel. It could either have a timer that moves from one photo to another, or two buttons either side in order for the user to change the photo themselves. I would also add a border around the photos, so that the photos are clearer. 
+	<br><br>
+	The next thing I need to do is create a new page, in order to show how I created this website from start to finish.
+	</p>
+	</div>
+
+
+	<div class="intro2">
+	<h3 class="h3" id=contents>Web development: Contents</h3>
+	<p>
+	In order to create another webpage, I need to create another file. I decided to duplicate the 'index.html' file, and remove anything I didn't need. I kept the text I added in "Getting Started", and "The Header", as I want them to be seen on the new webpage. I named the file 'pa.html', short for Professional Apprenticeships. 
+	</p>
+	<img id=picborder src="img/pa/5/5.1.png" alt="This is the contents." style="width:50%">
+	<p>
+	The next thing I needed to do was to create the contents box. This will allow the user to jump to each header, instead of scrolling through the text. Each title will have a link which will directly jump to the specific header. 
+	</p>
+	<br>
+	
+	<div class="boxed">
+	<h4>HTML</h4><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
+		<span class="attributecolor" style="color:red">class</span>="intro"<span class="attributecolor" style="color:red">id</span>="top"&gt;<br>&nbsp;&nbsp;&nbsp;&lth3&gt;<span class="tagcolor" style="color:black">Contents</span>&lt/h3&gt;
+		<br>
+		&ltnav&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&ltul&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 1</span>&lt/a&gt;&lt/li&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 2</span>&lt/a&gt;&lt/li&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 3</span>&lt/a&gt;&lt/li&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 4</span>&lt/a&gt;&lt/li&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 5</span>&lt/a&gt;&lt/li&gt;
+		<br>
+		&nbsp;&nbsp;&nbsp;&lt/ul&gt;
+		<br>
+		&lt/nav&gt;
+		</span>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="boxed">
+	<h4>CSS</h4><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">h3
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">font-family
+		<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
+		<span class="tagcolor" style="color:black">: 0.7em;</span><br>&nbsp;&nbsp;&nbsp;text-align
+		<span class="tagcolor" style="color:black">: center;</span></span><br>&rbrace;</span></span><br><br>
+		<span class="attributecolor" style="color:red">.intro
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">font-family
+		<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;color
+		<span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background
+		<span class="tagcolor" style="color:black">: #000000;</span><br>&nbsp;&nbsp;&nbsp;padding
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top
+		<span class="tagcolor" style="color:black">: -15em;</span><br>&nbsp;&nbsp;&nbsp;margin
+		<span class="tagcolor" style="color:black">: -1em;</span><br></span>&rbrace;</span><br><br></span>
+		<span class="tagnamecolor" style="color:blue">
+		<span class="tagcolor" style="color:black">#</span>top
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">font-family
+		<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;background
+		<span class="tagcolor" style="color:black">: #758799;</span><br>&nbsp;&nbsp;&nbsp;padding
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top
+		<span class="tagcolor" style="color:black">: 7em;</span><br>&nbsp;&nbsp;&nbsp;margin
+		<span class="tagcolor" style="color:black">: -1em;</span></span><br>&rbrace;</span></span><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">p, li
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">font-family
+		<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
+		<span class="tagcolor" style="color:black">: 0.7em;</span><br>&nbsp;&nbsp;&nbsp;margin-left
+		<span class="tagcolor" style="color:black">: 2.5em;</span></span><br>&rbrace;</span></span><br><br>	
+		<span class="tagnamecolor" style="color:mediumblue">ul
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">margin-right
+		<span class="tagcolor" style="color:black">: 3em;</span><br>&nbsp;&nbsp;&nbsp;list-style
+		<span class="tagcolor" style="color:black">: none;</span><br>&nbsp;&nbsp;&nbsp;text-align
+		<span class="tagcolor" style="color:black">: center;</span></span><br>&rbrace;</span></span><br><br>
+		<span class="tagnamecolor" style="color:mediumblue">a
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">color
+		<span class="tagcolor" style="color:black">: #ffffff;</span></span><br>&rbrace;</span></span>
+	</div>
+	</div>
+	
+	<!-- <div class="intro"> -->
+	<!-- <h3 class="h3" id=htmlcss>Web development: HTML/CSS preview boxes</h3> -->
+	<!-- <p> -->
+	<!-- In order to create another webpage, I need to create another file. I decided to duplicate the 'index.html' file, and remove anything I didn't need. I kept the text I added in "Getting Started", and "The Header", as I want them to be seen on the new webpage. I named the file 'pa.html', short for Professional Apprenticeships.  -->
+	<!-- </p> -->
+	<!-- <img id=picborder src="img/pa/5/5.1.png" alt="This is the contents." style="width:50%"> -->
+	<!-- <p> -->
+	<!-- The next thing I needed to do was to create the contents box. This will allow the user to jump to each header, instead of scrolling through the text. Each title will have a link which will directly jump to the specific header.  -->
+	<!-- </p> -->
+	<!-- <br> -->
+	<!-- <div class="boxed"> -->
+	<!-- <h4>HTML</h4><br><br> -->
+		<!-- <span class="tagnamecolor" style="color:mediumblue">&ltdiv -->
+		<!-- <span class="attributecolor" style="color:red">class</span>="intro"<span class="attributecolor" style="color:red">id</span>="top"&gt;<br>&nbsp;&nbsp;&nbsp;&lth3&gt;<span class="tagcolor" style="color:black">Contents</span>&lt/h3&gt; -->
+		<!-- <br> -->
+		<!-- &ltnav&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&ltul&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 1</span>&lt/a&gt;&lt/li&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 2</span>&lt/a&gt;&lt/li&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 3</span>&lt/a&gt;&lt/li&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 4</span>&lt/a&gt;&lt/li&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 5</span>&lt/a&gt;&lt/li&gt; -->
+		<!-- <br> -->
+		<!-- &nbsp;&nbsp;&nbsp;&lt/ul&gt; -->
+		<!-- <br> -->
+		<!-- &lt/nav&gt; -->
+		<!-- </span> -->
+	<!-- </div> -->
+	<!-- <br> -->
+	<!-- <br> -->
+	<!-- <br> -->
+	<!-- <div class="boxed"> -->
+	<!-- <h4>CSS</h4><br><br> -->
+		<!-- <span class="tagnamecolor" style="color:mediumblue">h3 -->
+		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
+		<!-- <span class="tagnamecolor" style="color:#8B4BBE">font-family -->
+		<!-- <span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size -->
+		<!-- <span class="tagcolor" style="color:black">: 0.7em;</span><br>&nbsp;&nbsp;&nbsp;text-align -->
+		<!-- <span class="tagcolor" style="color:black">: center;</span></span><br>&rbrace;</span></span><br><br> -->
+		<!-- <span class="attributecolor" style="color:red">.intro -->
+		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
+		<!-- <span class="tagnamecolor" style="color:#8B4BBE">font-family -->
+		<!-- <span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size -->
+		<!-- <span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;color -->
+		<!-- <span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background -->
+		<!-- <span class="tagcolor" style="color:black">: #000000;</span><br>&nbsp;&nbsp;&nbsp;padding -->
+		<!-- <span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top -->
+		<!-- <span class="tagcolor" style="color:black">: -15em;</span><br>&nbsp;&nbsp;&nbsp;margin -->
+		<!-- <span class="tagcolor" style="color:black">: -1em;</span><br></span>&rbrace;</span><br><br></span> -->
+		<!-- <span class="tagnamecolor" style="color:blue"> -->
+		<!-- <span class="tagcolor" style="color:black">#</span>top -->
+		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
+		<!-- <span class="tagnamecolor" style="color:#8B4BBE">font-family -->
+		<!-- <span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size -->
+		<!-- <span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;background -->
+		<!-- <span class="tagcolor" style="color:black">: #758799;</span><br>&nbsp;&nbsp;&nbsp;padding -->
+		<!-- <span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top -->
+		<!-- <span class="tagcolor" style="color:black">: 7em;</span><br>&nbsp;&nbsp;&nbsp;margin -->
+		<!-- <span class="tagcolor" style="color:black">: -1em;</span></span><br>&rbrace;</span></span><br><br> -->
+		<!-- <span class="tagnamecolor" style="color:mediumblue">p, li -->
+		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
+		<!-- <span class="tagnamecolor" style="color:#8B4BBE">font-family -->
+		<!-- <span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size -->
+		<!-- <span class="tagcolor" style="color:black">: 0.7em;</span><br>&nbsp;&nbsp;&nbsp;margin-left -->
+		<!-- <span class="tagcolor" style="color:black">: 2.5em;</span></span><br>&rbrace;</span></span><br><br>	 -->
+		<!-- <span class="tagnamecolor" style="color:mediumblue">ul -->
+		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
+		<!-- <span class="tagnamecolor" style="color:#8B4BBE">margin-right -->
+		<!-- <span class="tagcolor" style="color:black">: 3em;</span><br>&nbsp;&nbsp;&nbsp;list-style -->
+		<!-- <span class="tagcolor" style="color:black">: none;</span><br>&nbsp;&nbsp;&nbsp;text-align -->
+		<!-- <span class="tagcolor" style="color:black">: center;</span></span><br>&rbrace;</span></span><br><br> -->
+		<!-- <span class="tagnamecolor" style="color:mediumblue">a -->
+		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
+		<!-- <span class="tagnamecolor" style="color:#8B4BBE">color -->
+		<!-- <span class="tagcolor" style="color:black">: #ffffff;</span></span><br>&rbrace;</span></span> -->
+	<!-- </div> -->
+	<!-- </div>	 -->
+
+</body>
+</html>

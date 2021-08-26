@@ -38,8 +38,8 @@ img {
     max-height: 200%;
     display: block;
     margin: 0 auto;
-	margin-bottom: 2em;
-	margin-top:2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 .main {
@@ -141,7 +141,7 @@ a {
 	align-items: center;
 	margin-left: 25%;
 	margin-top: -0.5em;
-	padding: 1em;
+	padding: 2em;
 	font-size: 1em;
 	font-family: Lucida Console;
 	border-radius: 15px;
@@ -151,6 +151,15 @@ a {
 	color: #3466AA
 }
 
+/*#casestudy img {
+	max-width: 200%;
+	max-height: 200%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	margin-top: 5em;
+}
+	*/
 h4{
 	margin: 0em;
 	color:black;

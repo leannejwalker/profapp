@@ -141,7 +141,8 @@ a {
 	align-items: center;
 	margin-left: 25%;
 	margin-top: -0.5em;
-	padding: 2em;
+	padding: 1.2em;
+	padding-right:2em;
 	font-size: 1em;
 	font-family: Lucida Console;
 	border-radius: 15px;

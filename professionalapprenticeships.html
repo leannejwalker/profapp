@@ -13,9 +13,19 @@
 <body>
   <script>
 
-        window.onbeforeunload = function () {
+        window.onload = function () {
             window.scrollTo(0, 0);
-        }; 
+        };
+
+				function scrollToElement(element) {
+					const el = document.getElementById(element)
+					const y = el.getBoundingClientRect().top - 166;
+					window.scroll({
+  					top: y,
+  					behavior: 'smooth'
+					});
+				}
+
 			
   </script> 
 
@@ -31,29 +41,29 @@
     <h3>Contents</h3>
   <nav>
     <ul>
-      <li><a href="#setup">Setting up a hosting account</a></li>
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('setup')">Setting up a hosting account</a></li>
 	  <br>
-      <li><a href="#dns">DNS Propagation</a></li>
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('dns')">DNS Propagation</a></li>
 	  <br>
-      <li><a href="#webdes">Website design and layout</a></li>
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('webdes')">Website design and layout</a></li>
 	  <br>
-      <li><a href="#git">Web development: GitHub </a></li>
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('git')">Web development: GitHub </a></li>
 	  <br>
-      <li><a href="#gs">Web development: Gettings Started </a></li>
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('gs')">Web development: Gettings Started </a></li>
 	  <br>
-      <li><a href="#head">Web development: The Header </a></li>	  
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('head')">Web development: The Header </a></li>	  
 	  <br>
-      <li><a href="#tbp">Web development: The Big Picture</a></li>
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('tbp')">Web development: The Big Picture</a></li>
 	  <br>
-      <li><a href="#aboutme">Web development: About Me</a></li>
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('aboutme')">Web development: About Me</a></li>
 	  <br>
-      <li><a href="#ttl">Web development: The Three Links</a></li>
+      <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('ttl')">Web development: The Three Links</a></li>
 	  <br>
-	  <li><a href="#ttl">Preview #1</a></li>
+	  <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('ttl')">Preview #1</a></li>
 	  <br>
-	  <li><a href="#contents">Web development: Content</a></li>
+	  <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('contents')">Web development: Content</a></li>
 	  <br>
-	  <li><a href="#htmlcss">Web development: HTML/CSS preview boxes</a></li>
+	  <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('htmlcss')">Web development: HTML/CSS preview boxes</a></li>
     </ul>
   </nav>
   </div>

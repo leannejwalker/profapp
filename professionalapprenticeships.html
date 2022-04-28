@@ -16,8 +16,11 @@
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }; 
-		
-  </script> <!--For the header-->
+			
+  </script> 
+
+<!--HEADERS-->
+
   <div class="header">
     <h1>Jade<br>
     Walker</h1>
@@ -51,6 +54,11 @@
     </ul>
   </nav>
   </div>
+
+
+
+<!--SETTING UP A HOSTING ACCOUNT-->
+
   <div class="intro">
     <h3 class="h3" id=setup>Setting up a hosting account</h3>
 	<p>To create a hosting account for the website, I used Plesk, which is a hosting control panel. I will need to create a customer account to set up my domain and create a platform for my website. It will also allow me to complete tasks such as setting up FTP access and applying SSLs. I created a new customer account by pressing “Add a customer”.
@@ -79,8 +87,22 @@
 	I have now created my customer account.
 	<img src="img/pa/1/1.3.png" alt="Customer details">
 	</p>
+	<br>
+	<div class="casestudy">
+		<img src="img/pa/chlogo.png" alt="Cloud Heroes">
+		<p>
+			When I first started at Cloud Heroes, one of the first tasks I learned how to do was to create hosting accounts for customers. Hosting accounts consist of space for website hosting, DNS, and email storage. Setting up hosting accounts are very common when it comes to setting up new customers for one of our resellers, Expert Agent. They are a company that provide a platform for estate agents to run their business on.<br><br>
+			When we first receive the request, we add it to our job system. We then go to the web interface of our web server and create a new hosting account. We first have to set up the user account, adding the details of the new customer Expert Agent has provided us with. We continue with adding the web hosting element to the user account by adding the domain to the hosting account, so that the web space is designated to the domain. Once we have added the domain, we can assign a subscription to it. A subscription tells the server how much space a domain can use on the server and can automatically block usage if over the limit or is taking advantage of the Fair Use Policy.<br><br>
+			No DNS or email set up is required on these, as Expert Agent complete these themselves. We do have to provide log in details and FTP details so that Expert Agent can transfer websites to the new hosting account. Passwords are added securely to our customer portal, where they are viewable for 30 days before they are erased from the server. Once Expert Agent have completed this, we install an SSL to ensure the site stays secure.
+			<br>
+		</p>
+	</div>
   </div>
+
+
   
+<!--DNS PROPAGATION-->
+
   <div class="intro2">
    <h3 class="h3" id=dns>DNS Propagation</h3>
     <p>My next task is to make sure the domain is on the correct name server. Doing this ensures that I will be able to load the website files, hosted on Plesk, from the domain. This will then allow me to load the website files with the domain. At this moment in time, my domain leannejade.co.uk is currently pointing at my domain registrar, Namecheap’s name servers.
@@ -106,14 +128,25 @@
 	<p>
 	Now that I have set up the account and changed the name servers, I will need to wait for the DNS to propagate. In the meantime, I will start designing and building the website. 
 	</p>
+	<br>
+	<div class="casestudy">
+		<img src="img/pa/chlogo.png" alt="Cloud Heroes">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat. Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et. Donec placerat, augue sit amet egestas tristique, purus lacus rutrum orci, sed congue ante urna ut sapien. Etiam nec ex nisl. Sed volutpat erat at justo posuere, ut pharetra nulla tempus. In vehicula venenatis mattis. Nunc maximus venenatis suscipit. Nunc nisl quam, tristique sit amet felis ut, gravida semper turpis. Proin a egestas augue. In faucibus feugiat augue a blandit. Nullam eu leo suscipit, feugiat justo aliquam, tincidunt purus. Aenean sed libero sit amet neque scelerisque ullamcorper non eu felis. Suspendisse potenti. Donec tempor interdum hendrerit. Duis a dignissim ipsum, quis fermentum nibh. Maecenas et tellus arcu. Nunc et feugiat nunc, eu accumsan diam.<br>
+		</p>
+	</div>
   </div>
+
+
   
+<!--WEBSITE DESIGN AND LAYOUT-->
+
   <div class="intro">
    <h3 class="h3" id=webdes>Website design and layout</h3>
 	<p>
 	As the website will be a portfolio, I will be creating a site that is simple and easy to navigate. I will be using HTML, PHP and CSS. It will include a basic colour palette, so that the website looks professional and slick. The colours on the website will be in hex so that it can work with HTML, PHP and CSS. Hex colour codes start with #. 
 		<img src="img/pa/3/3.1.png" alt="Main page">
-	On the landing page, I will have a large header, in faded light grey #758799), with my name as the header. I would like the header text to be in Roboto, which is a Google Font.
+	On the landing page, I will have a large header, in faded light grey (#758799), with my name as the header. I would like the header text to be in Roboto, which is a Google Font.
 	<br><br>
 	I could add a navigation bar at the top of the webpage, so that the user can access the different pages, however I feel that it would make the webpage more complicated and would move away from the slick design.  Instead, I chose to have the URLs to different webpages underneath the picture. 
 	<br><br>
@@ -130,88 +163,113 @@
 	<br><br>
 	I may add extra parts to the website as I go along, as I may find a better way to build or show something, however most of the elements I have shown I will be using. 
 	</p>
+	<br>
   </div>
+
+
   
+<!--GITHUB-->
+
   <div class="intro2">
    <h3 class="h3" id=gs>Web development: Getting Started</h3>
-    <p>The first step is to create the files and folders where the website will be built in. I created a main folder called “leannejade.co.uk” and created a file called “index.html”. This is where the landing page will be. If the file had a different name to “index.html”, it would not be recognised by the server as the main page, and there would be an error. I also created a file called css, which I will be using later. I opened the html file in Notepad ++ and started building the first page of the website.
-	<br>
-	<br>
-	<img src="img/pa/4/4.1.png" alt="The making of index.html">
-	<br>
-	To start the webpage, I need to set the doctype declaration. When the page is open, this line of code tells the browser what language the code is written in. This then allows the browser to translate the code into readable text. All HTML webpages need the doctype declaration. 
-	The second line of code defines the language or country combination that the text is written in. 
-	<br><br>
+	<p>
+		I decided to use GitHub to track changes I made to the website. GitHub is a place where developers can use open-source code, making and tracking changes to both already created code, or new code.  Github will allow me back track at any time, if changes I made were not correct. It will also help me understand other tools that I will need to use along side GitHub. Plesk has the ability to integrate GitHub, so that any changes I make on the website will be shown on GitHub and the website. When coding, I use Visual Studios, that has GitHub built in. Once I have edited the code, I can commit changes, which means the changes have been logged. Once the changes have been logged, I can push any changes to Plesk, which then makes these changes live.
+
+		Previously, I added any changes I made here, along with how I made those changes. Any changes to this portfolio will now be at the link <a href="https://github.com/leannejwalker/profapp/commits?author=leannejwalker">here</a>.
 	</p>
-	<div class="boxed">
-		<span class="tagnamecolor" style="color:black">&lt!doctype html&gt;<br><span class="tagnamecolor" style="color:mediumblue">&lthtml<span class="attributecolor" style="color:red"> lang</span>="en-gb"&gt;</span></span>
+	<div class="casestudy">
+		<img src="img/pa/chlogo.png" alt="Cloud Heroes">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat. Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et. Donec placerat, augue sit amet egestas tristique, purus lacus rutrum orci, sed congue ante urna ut sapien. Etiam nec ex nisl. Sed volutpat erat at justo posuere, ut pharetra nulla tempus. In vehicula venenatis mattis. Nunc maximus venenatis suscipit. Nunc nisl quam, tristique sit amet felis ut, gravida semper turpis. Proin a egestas augue. In faucibus feugiat augue a blandit. Nullam eu leo suscipit, feugiat justo aliquam, tincidunt purus. Aenean sed libero sit amet neque scelerisque ullamcorper non eu felis. Suspendisse potenti. Donec tempor interdum hendrerit. Duis a dignissim ipsum, quis fermentum nibh. Maecenas et tellus arcu. Nunc et feugiat nunc, eu accumsan diam.<br>
+		</p>
 	</div>
-	<p>
-	<br>
-	The next part of the code is the head tag. This tag holds all the metadata, or information of the contents of the webpage. 
-	<br><br>
-	</p>
-	<div class="boxed">
-		<span class="tagnamecolor" style="color:mediumblue">&lthead&gt;<br>&nbsp;&nbsp;&nbsp;&lttitle&gt;
-		<span class="tagcolor" style="color:black">Jade Walker</span>&lt/title&gt;<br>&nbsp;&nbsp;&nbsp;&ltmeta 
-		<span class="attributecolor" style="color:red">charset</span>="utf-8"&gt;<br>&nbsp;&nbsp;&nbsp;&ltmeta&gt;
-		<span class="attributecolor" style="color:red">name</span>="viewport"
-		<span class="attributecolor" style="color:red">content</span>="width=device-width, initial-scale=1"&gt;<br>&nbsp;&nbsp;&nbsp;&ltlink&gt;
-		<span class="attributecolor" style="color:red">rel</span>="stylesheet" 
-		<span class="attributecolor" style="color:red">href</span>="css/custom.css"&gt;<br> &lthead&gt;
-		</span>
-	</div>
-	<p>
-	<br>
-	The first line of the head tag is the page title. This is the text shown on the tab bar at the top of the browser. This identifies what the site is, so if the user change tabs, they can get to the right one quickly. I chose to create a < div > tag, so that I could use the class attribute to give the header and the header text different styles. The h1 tag will hold the header text.
-	<br><br>
-	</p>
-	<div class="boxed">
-		<span class="tagnamecolor" style="color:mediumblue">&ltdiv 
-		<span class="attributecolor" style="color:red">class</span>="header"&gt;<br>&nbsp;&nbsp;&nbsp;&lth1&gt;
-		<span class="tagcolor" style="color:black">Jade Walker</span>&lt/h1&gt;<br>&lt/div&gt;
-	</div>
-	<p>
-	<br>
-	How it is time to see how the website looks.
-	<br>
-	</p>
-	<img src="img/pa/4/4.5.png" alt="Tab">
-	<img src="img/pa/4/4.6.png" alt="Website preview">
-	<p>
-	The page title shows on the tab bar. This is exactly what I wanted. Other than adding a logo next to my name, no further action is needed on that element of the site. However, when looking at the webpage, I can see that the text sits to the left of the page and is quite small. As well as the header not being correct, I am also missing the band of colour at the top. This is because I have yet to create a CSS file and style them both.
-	<img src="img/pa/4/4.7.png" alt="Making of custom.css">
-	In my CSS folder I made previously, I have created a custom.css file. This is the file we linked back in the &lthead&gt; tag. CCS means “Cascading Style Sheet” and means that any styles in the file are used across the site. For example, if I have a paragraph (&ltp&gt;) with a font of 12px in the style sheet, every piece of text inside a &ltp&gt; tag across the site will have 12px font.
-	<br><br>
-	Firstly, I wanted the h1 tag, which holds my text, to be centred. ‘text-align’ is a CSS style which moves any text with the style applied to any position on the page. ‘text-align: center’ means that the text will be in the centre of the page.
-	</p>
-	<div class="boxed">
-		<span class="tagnamecolor" style="color:mediumblue">h1
-		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;&nbsp;
-		<span class="tagnamecolor" style="color:#8B4BBE">text-align
-		<span class="tagcolor" style="color:black">: center;</span><br></span>&rbrace;</span></span>
-	</div>
-	<p>
-	<br>
-	Now, lets go back to view the page to see what happens.
-	</p>
-	<img src="img/pa/4/4.9.png" alt="Website preview">
-	<p>
-	Although I can see that the text is in the middle of the page, it is quite difficult to read. The default is 2em, but I would like it to be 4em. Em is a unit of text size. To change the text size, I need to go into the h1 tag again in the style sheet and add another attribute. ‘font-size’ is the size of the font and will recognise many different units of length including px, em and percentages. 
-	<br><br>
-	</p>
-		<div class="boxed">
-		<span class="tagnamecolor" style="color:mediumblue">h1
-		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;&nbsp;<span class="tagnamecolor" style="color:#8B4BBE">text-align
-		<span class="tagcolor" style="color:black">: center;</span><br>&nbsp;&nbsp;&nbsp;font-size
-		<span class="tagcolor" style="color:black">: 4em;</span><br></span>&rbrace;</span></span>
-	</div>
-	<img src="img/pa/4/4.11.png" alt="Website preview">
-	<p>
-	Now that I had gotten the basics out of the way, I decided to go ahead and start making the website look more appealing.
-	</p>
   </div>
+
+<!--WEB DEVELOPMENT: GETTING STARTED-->
+
   <div class="intro">
+	<h3 class="h3" id=gs>Web development: Getting Started</h3>
+	 <p>The first step is to create the files and folders where the website will be built in. I created a main folder called “leannejade.co.uk” and created a file called “index.html”. This is where the landing page will be. If the file had a different name to “index.html”, it would not be recognised by the server as the main page, and there would be an error. I also created a file called css, which I will be using later. I opened the html file in Notepad ++ and started building the first page of the website.
+	 <br>
+	 <br>
+	 <img src="img/pa/4/4.1.png" alt="The making of index.html">
+	 <br>
+	 To start the webpage, I need to set the doctype declaration. When the page is open, this line of code tells the browser what language the code is written in. This then allows the browser to translate the code into readable text. All HTML webpages need the doctype declaration. 
+	 The second line of code defines the language or country combination that the text is written in. 
+	 <br><br>
+	 </p>
+	 <div class="boxed">
+		 <span class="tagnamecolor" style="color:black">&lt!doctype html&gt;<br><span class="tagnamecolor" style="color:mediumblue">&lthtml<span class="attributecolor" style="color:red"> lang</span>="en-gb"&gt;</span></span>
+	 </div>
+	 <p>
+	 <br>
+	 The next part of the code is the head tag. This tag holds all the metadata, or information of the contents of the webpage. 
+	 <br><br>
+	 </p>
+	 <div class="boxed">
+		 <span class="tagnamecolor" style="color:mediumblue">&lthead&gt;<br>&nbsp;&nbsp;&nbsp;&lttitle&gt;
+		 <span class="tagcolor" style="color:black">Jade Walker</span>&lt/title&gt;<br>&nbsp;&nbsp;&nbsp;&ltmeta 
+		 <span class="attributecolor" style="color:red">charset</span>="utf-8"&gt;<br>&nbsp;&nbsp;&nbsp;&ltmeta&gt;
+		 <span class="attributecolor" style="color:red">name</span>="viewport"
+		 <span class="attributecolor" style="color:red">content</span>="width=device-width, initial-scale=1"&gt;<br>&nbsp;&nbsp;&nbsp;&ltlink&gt;
+		 <span class="attributecolor" style="color:red">rel</span>="stylesheet" 
+		 <span class="attributecolor" style="color:red">href</span>="css/custom.css"&gt;<br> &lthead&gt;
+		 </span>
+	 </div>
+	 <p>
+	 <br>
+	 The first line of the head tag is the page title. This is the text shown on the tab bar at the top of the browser. This identifies what the site is, so if the user change tabs, they can get to the right one quickly. I chose to create a < div > tag, so that I could use the class attribute to give the header and the header text different styles. The h1 tag will hold the header text.
+	 <br><br>
+	 </p>
+	 <div class="boxed">
+		 <span class="tagnamecolor" style="color:mediumblue">&ltdiv 
+		 <span class="attributecolor" style="color:red">class</span>="header"&gt;<br>&nbsp;&nbsp;&nbsp;&lth1&gt;
+		 <span class="tagcolor" style="color:black">Jade Walker</span>&lt/h1&gt;<br>&lt/div&gt;
+	 </div>
+	 <p>
+	 <br>
+	 How it is time to see how the website looks.
+	 <br>
+	 </p>
+	 <img src="img/pa/4/4.5.png" alt="Tab">
+	 <img src="img/pa/4/4.6.png" alt="Website preview">
+	 <p>
+	 The page title shows on the tab bar. This is exactly what I wanted. Other than adding a logo next to my name, no further action is needed on that element of the site. However, when looking at the webpage, I can see that the text sits to the left of the page and is quite small. As well as the header not being correct, I am also missing the band of colour at the top. This is because I have yet to create a CSS file and style them both.
+	 <img src="img/pa/4/4.7.png" alt="Making of custom.css">
+	 In my CSS folder I made previously, I have created a custom.css file. This is the file we linked back in the &lthead&gt; tag. CCS means “Cascading Style Sheet” and means that any styles in the file are used across the site. For example, if I have a paragraph (&ltp&gt;) with a font of 12px in the style sheet, every piece of text inside a &ltp&gt; tag across the site will have 12px font.
+	 <br><br>
+	 Firstly, I wanted the h1 tag, which holds my text, to be centred. ‘text-align’ is a CSS style which moves any text with the style applied to any position on the page. ‘text-align: center’ means that the text will be in the centre of the page.
+	 </p>
+	 <div class="boxed">
+		 <span class="tagnamecolor" style="color:mediumblue">h1
+		 <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;&nbsp;
+		 <span class="tagnamecolor" style="color:#8B4BBE">text-align
+		 <span class="tagcolor" style="color:black">: center;</span><br></span>&rbrace;</span></span>
+	 </div>
+	 <p>
+	 <br>
+	 Now, lets go back to view the page to see what happens.
+	 </p>
+	 <img src="img/pa/4/4.9.png" alt="Website preview">
+	 <p>
+	 Although I can see that the text is in the middle of the page, it is quite difficult to read. The default is 2em, but I would like it to be 4em. Em is a unit of text size. To change the text size, I need to go into the h1 tag again in the style sheet and add another attribute. ‘font-size’ is the size of the font and will recognise many different units of length including px, em and percentages. 
+	 <br><br>
+	 </p>
+		 <div class="boxed">
+		 <span class="tagnamecolor" style="color:mediumblue">h1
+		 <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;&nbsp;<span class="tagnamecolor" style="color:#8B4BBE">text-align
+		 <span class="tagcolor" style="color:black">: center;</span><br>&nbsp;&nbsp;&nbsp;font-size
+		 <span class="tagcolor" style="color:black">: 4em;</span><br></span>&rbrace;</span></span>
+	 </div>
+	 <img src="img/pa/4/4.11.png" alt="Website preview">
+	 <p>
+	 Now that I had gotten the basics out of the way, I decided to go ahead and start making the website look more appealing.
+	 </p>
+   </div>
+
+<!--WEB DEVELOPMENT: THE HEADER-->
+
+  <div class="intro2">
   <h3 class="h3" id=head>Web development: The Header</h3>
 	<p>
 	I wanted to make the header look fancy, but not too complicated. With the plan I had, I decided I wanted the header text to be to one side, with some text underneath it. Having a &ltbr&gt; tag between my first and last name seperates the two on different lines, and makes it look more professional. I then added text underneath my name. I had to create an ID called "undertext" in order to change the font size. The ID gives a specific item a different style from the rest of the same items in the same tag. This means no other text in the &lth1&gt; tag will be affected.
@@ -269,7 +327,9 @@
 	<br>
 	</div>
 	 
-	<div class="intro2">
+<!--WEB DEVELOPMENT: THE BIG PICTURE-->
+
+	<div class="intro">
 	<h3 class="h3" id=tbp>Web development: The Big Picture</h3>
 	<p>
 	To create a big picture at the top of the site, I need to include an img tag, along with some attributes.
@@ -314,7 +374,10 @@
 	</p>
 	<img id=picborder src="img/pa/4/4.15.png" alt="This is the website header."><br>
 	</div>
-	<div class="intro">
+
+<!--WEB DEVELOPMENT: ABOUT ME-->
+
+	<div class="intro2">
 	<h3 class="h3" id=aboutme>Web development: About Me</h3>
 	<p>
 	The next steps are to create an "About me" box, which should explain how I came to understand everything I learned. 
@@ -353,8 +416,9 @@
 	<img id=picborder src="img/pa/4/4.16.png" alt="This is the About Me page."><br>
 	</div>
 
+<!--WEB DEVELOPMENT: THE THREE LINKS-->
 	
-	<div class="intro2">
+	<div class="intro">
 	<h3 class="h3" id=ttl>Web development: The Three Links</h3>
 	<p>
 	The next steps are to create an "About me" box, which should explain how I came to understand everything I learned. 
@@ -458,7 +522,9 @@
 	<img id=picborder src="img/pa/4/4.17.png" alt="This is the About Me page."><br>
 	</div>
 	
-	<div class="intro">
+<!--PREVIEW OF MAIN PAGE-->
+
+	<div class="intro2">
 	<h3 class="h3" id=preview>Preview of Main Page</h3>
 	<img id=picborder src="img/pa/4/preview.png" alt="A preview of the main page.">
 	<p>
@@ -469,8 +535,9 @@
 	</p>
 	</div>
 
+<!--WEB DEVELOPMENT: CONTENTS-->
 
-	<div class="intro2">
+	<div class="intro">
 	<h3 class="h3" id=contents>Web development: Contents</h3>
 	<p>
 	In order to create another webpage, I need to create another file. I decided to duplicate the 'index.html' file, and remove anything I didn't need. I kept the text I added in "Getting Started", and "The Header", as I want them to be seen on the new webpage. I named the file 'pa.html', short for Professional Apprenticeships. 
@@ -562,98 +629,5 @@
 		<span class="tagcolor" style="color:black">: #ffffff;</span></span><br>&rbrace;</span></span>
 	</div>
 	</div>
-	
-	<!-- <div class="intro"> -->
-	<!-- <h3 class="h3" id=htmlcss>Web development: HTML/CSS preview boxes</h3> -->
-	<!-- <p> -->
-	<!-- In order to create another webpage, I need to create another file. I decided to duplicate the 'index.html' file, and remove anything I didn't need. I kept the text I added in "Getting Started", and "The Header", as I want them to be seen on the new webpage. I named the file 'pa.html', short for Professional Apprenticeships.  -->
-	<!-- </p> -->
-	<!-- <img id=picborder src="img/pa/5/5.1.png" alt="This is the contents." style="width:50%"> -->
-	<!-- <p> -->
-	<!-- The next thing I needed to do was to create the contents box. This will allow the user to jump to each header, instead of scrolling through the text. Each title will have a link which will directly jump to the specific header.  -->
-	<!-- </p> -->
-	<!-- <br> -->
-	<!-- <div class="boxed"> -->
-	<!-- <h4>HTML</h4><br><br> -->
-		<!-- <span class="tagnamecolor" style="color:mediumblue">&ltdiv -->
-		<!-- <span class="attributecolor" style="color:red">class</span>="intro"<span class="attributecolor" style="color:red">id</span>="top"&gt;<br>&nbsp;&nbsp;&nbsp;&lth3&gt;<span class="tagcolor" style="color:black">Contents</span>&lt/h3&gt; -->
-		<!-- <br> -->
-		<!-- &ltnav&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&ltul&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 1</span>&lt/a&gt;&lt/li&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 2</span>&lt/a&gt;&lt/li&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 3</span>&lt/a&gt;&lt/li&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 4</span>&lt/a&gt;&lt/li&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltbr&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt;&lta <span class="tagcolor" style="color:red">href</span><span class="tagcolor" style="color:black">=<span class="tagcolor" style="color:#8B4BBE">"#setup"</span>&gt;Link 5</span>&lt/a&gt;&lt/li&gt; -->
-		<!-- <br> -->
-		<!-- &nbsp;&nbsp;&nbsp;&lt/ul&gt; -->
-		<!-- <br> -->
-		<!-- &lt/nav&gt; -->
-		<!-- </span> -->
-	<!-- </div> -->
-	<!-- <br> -->
-	<!-- <br> -->
-	<!-- <br> -->
-	<!-- <div class="boxed"> -->
-	<!-- <h4>CSS</h4><br><br> -->
-		<!-- <span class="tagnamecolor" style="color:mediumblue">h3 -->
-		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
-		<!-- <span class="tagnamecolor" style="color:#8B4BBE">font-family -->
-		<!-- <span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size -->
-		<!-- <span class="tagcolor" style="color:black">: 0.7em;</span><br>&nbsp;&nbsp;&nbsp;text-align -->
-		<!-- <span class="tagcolor" style="color:black">: center;</span></span><br>&rbrace;</span></span><br><br> -->
-		<!-- <span class="attributecolor" style="color:red">.intro -->
-		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
-		<!-- <span class="tagnamecolor" style="color:#8B4BBE">font-family -->
-		<!-- <span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size -->
-		<!-- <span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;color -->
-		<!-- <span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background -->
-		<!-- <span class="tagcolor" style="color:black">: #000000;</span><br>&nbsp;&nbsp;&nbsp;padding -->
-		<!-- <span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top -->
-		<!-- <span class="tagcolor" style="color:black">: -15em;</span><br>&nbsp;&nbsp;&nbsp;margin -->
-		<!-- <span class="tagcolor" style="color:black">: -1em;</span><br></span>&rbrace;</span><br><br></span> -->
-		<!-- <span class="tagnamecolor" style="color:blue"> -->
-		<!-- <span class="tagcolor" style="color:black">#</span>top -->
-		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
-		<!-- <span class="tagnamecolor" style="color:#8B4BBE">font-family -->
-		<!-- <span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size -->
-		<!-- <span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;background -->
-		<!-- <span class="tagcolor" style="color:black">: #758799;</span><br>&nbsp;&nbsp;&nbsp;padding -->
-		<!-- <span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top -->
-		<!-- <span class="tagcolor" style="color:black">: 7em;</span><br>&nbsp;&nbsp;&nbsp;margin -->
-		<!-- <span class="tagcolor" style="color:black">: -1em;</span></span><br>&rbrace;</span></span><br><br> -->
-		<!-- <span class="tagnamecolor" style="color:mediumblue">p, li -->
-		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
-		<!-- <span class="tagnamecolor" style="color:#8B4BBE">font-family -->
-		<!-- <span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size -->
-		<!-- <span class="tagcolor" style="color:black">: 0.7em;</span><br>&nbsp;&nbsp;&nbsp;margin-left -->
-		<!-- <span class="tagcolor" style="color:black">: 2.5em;</span></span><br>&rbrace;</span></span><br><br>	 -->
-		<!-- <span class="tagnamecolor" style="color:mediumblue">ul -->
-		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
-		<!-- <span class="tagnamecolor" style="color:#8B4BBE">margin-right -->
-		<!-- <span class="tagcolor" style="color:black">: 3em;</span><br>&nbsp;&nbsp;&nbsp;list-style -->
-		<!-- <span class="tagcolor" style="color:black">: none;</span><br>&nbsp;&nbsp;&nbsp;text-align -->
-		<!-- <span class="tagcolor" style="color:black">: center;</span></span><br>&rbrace;</span></span><br><br> -->
-		<!-- <span class="tagnamecolor" style="color:mediumblue">a -->
-		<!-- <span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp; -->
-		<!-- <span class="tagnamecolor" style="color:#8B4BBE">color -->
-		<!-- <span class="tagcolor" style="color:black">: #ffffff;</span></span><br>&rbrace;</span></span> -->
-	<!-- </div> -->
-	<!-- </div>	 -->
-
 </body>
 </html>

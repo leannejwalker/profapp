@@ -740,7 +740,7 @@
 	<div class="intro2">
 		<h3 class="h3" id=text>Web Development: Text Dividers</h3>
 		<p>
-		I wanted to separate each element so that the different options could be clearly differentiated. I chose two alternating colours, which are featured on the main page, so there is consistency in the website.
+		I wanted to separate each element so that the different options could be clearly differentiated, so I decided to add some text dividers. These dividers are going to be different blocks of colour, however, later on I may add some graphics to seperate the two colours. I chose two alternating colours, which are featured on the main page, so there is consistency in the website. The below shows the two different colours (intro and intro2) set as the class. We had previously set class="intro" on a few previous elements, so we can reuse the same code. We do need to define the class on each element, but this means we don't need to add the intro class into the CSS file.
 
 		</p>
 		<br>
@@ -753,13 +753,43 @@
 		<div class="boxed">
 			<h4>HTML (2nd colour option)</h4><br><br>
 			<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-			<span class="attributecolor" style="color:red">class</span>="intro"<br>&lth3&gt;<span class="attributecolor" style="color:black"> DNS Propagation </span>&lt/h3&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. </span>&lt/p&gt;<br>&lt/div&gt;
+			<span class="attributecolor" style="color:red">class</span>="intro2"<br>&lth3&gt;<span class="attributecolor" style="color:black"> DNS Propagation </span>&lt/h3&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. </span>&lt/p&gt;<br>&lt/div&gt;
 		</div>
 		<br>
 		<p>
 		From this code,	it doesn't look like the colour will change. Unless we add some CSS, the colour will not match the website. Here's the CSS we require below:
-
-
+		</p>
+		<br />
+		<div class="boxed">
+			<h4>CSS (1st colour option)</h4><br><br>
+				<span class="tagnamecolor" style="color:red">.intro
+				<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+				<span class="tagnamecolor" style="color:#8B4BBE">font-family
+				<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
+				<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;colour
+				<span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background
+				<span class="tagcolor" style="color:black">: #000000;</span><br>&nbsp;&nbsp;&nbsp;padding
+				<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top
+				<span class="tagcolor" style="color:black">: -15em;</span><br>&nbsp;&nbsp;&nbsp;margin
+				<span class="tagcolor" style="color:black">: -1em;</span></span><br>&rbrace;</span></span><br><br>
+		</div>
+		<br />
+		<div class="boxed">
+			<h4>CSS (2nd colour option)</h4><br><br>
+				<span class="tagnamecolor" style="color:red">.intro2
+				<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
+				<span class="tagnamecolor" style="color:#8B4BBE">font-family
+				<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
+				<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;colour
+				<span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background
+				<span class="tagcolor" style="color:black">: #758799;</span><br>&nbsp;&nbsp;&nbsp;padding
+				<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top
+				<span class="tagcolor" style="color:black">: -15em;</span><br>&nbsp;&nbsp;&nbsp;margin
+				<span class="tagcolor" style="color:black">: -1em;</span></span><br>&rbrace;</span></span><br><br>
+		</div>
+		<br />
+		<p>
+		As you can see, we didn't make many changes to the intro2 class, compared to the intro class that we previously used, except for the background colour. This means we can use intro and intro 2 alternatively in order to seperate each element and making it easier to read the webpage.
 		</p>
 	</div>
 	

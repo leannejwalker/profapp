@@ -171,3 +171,19 @@ h4{
 	border:2px solid #ffffff;
 	width: 75%;
 }
+
+table {
+	font-size: 0.6em;
+	margin-left: 2.5em;
+	font-family: Roboto;
+	border-collapse: collapse;
+	width: 85%;
+	background: black;
+}
+  
+td, th {
+	border: 5px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+  

@@ -78,7 +78,7 @@ h3{
 }
 .intro{
 	font-family: Roboto;
-	font-size:2.5em;
+	font-size:2em;
 	color: #ffffff;
 	background: #000000;
 	padding: 2em;
@@ -88,7 +88,7 @@ h3{
 
 .intro2{
 	font-family: Roboto;
-	font-size:2.5em;
+	font-size:2em;
 	color: #ffffff;
 	background: #758799;
 	padding: 2em;
@@ -108,14 +108,24 @@ h3{
 
 p, li{
 	font-size:0.6em;
-	margin-left: 2.5em;
+	margin-left: 2em;
 	font-family: Roboto;
 }
 ul {
 	text-align:center;
 	margin-right: 3em;
-	list-style: none
+	list-style: none;
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
 }
+
+.columns{
+    float: center;
+    position: relative;
+    margin-right: 20px;
+}
+
 a {
 	color: #ffffff;
 }

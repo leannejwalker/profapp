@@ -69,13 +69,13 @@
 	  <br>
       <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('testing')">Web development: Testing and Auditing</a></li>
 	  <br>
-	  <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('review')">Web development: Review</a></li>
-	  <br>
 	  <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('ftp')">Web development: FTP Protocol</a></li>
 	  <br>
 	  <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('ssl')">Web development: SSL Installation</a></li>
 	  <br>
 	  <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('email')">IMAP/POP3 Set Up</a></li>
+	  <br>
+	  <li><a style="cursor: pointer; text-decoration: underline;" onclick="scrollToElement('review')">Review</a></li>
     </ul>
   </nav>
   </div>
@@ -291,7 +291,7 @@
 	 <p>
 	 The page title shows on the tab bar. This is exactly what I wanted. Other than adding a logo next to my name, no further action is needed on that element of the site. However, when looking at the webpage, I can see that the text sits to the left of the page and is quite small. As well as the header not being correct, I am also missing the band of colour at the top. This is because I have yet to create a CSS file and style them both.
 	 <img src="img/pa/4/4.7.png" alt="Making of custom.css">
-	 In my CSS folder I made previously, I have created a custom.css file. This is the file we linked back in the &lthead&gt; tag. CCS means “Cascading Style Sheet” and means that any styles in the file are used across the site. For example, if I have a paragraph (&ltp&gt;) with a font of 12px in the style sheet, every piece of text inside a &ltp&gt; tag across the site will have 12px font.
+	 In my CSS folder I made previously, I have created a custom.css file. This is the file I had linked back in the &lthead&gt; tag. CCS means “Cascading Style Sheet” and means that any styles in the file are used across the site. For example, if I have a paragraph (&ltp&gt;) with a font of 12px in the style sheet, every piece of text inside a &ltp&gt; tag across the site will have 12px font.
 	 <br><br>
 	 Firstly, I wanted the h1 tag, which holds my text, to be centred. ‘text-align’ is a CSS style which moves any text with the style applied to any position on the page. ‘text-align: center’ means that the text will be in the centre of the page.
 	 </p>
@@ -740,7 +740,7 @@
 	<div class="intro2">
 		<h3 class="h3" id=text>Web Development: Text Dividers</h3>
 		<p>
-		I wanted to separate each element so that the different options could be clearly differentiated, so I decided to add some text dividers. These dividers are going to be different blocks of colour, however, later on I may add some graphics to seperate the two colours. I chose two alternating colours, which are featured on the main page, so there is consistency in the website. The below shows the two different colours (intro and intro2) set as the class. We had previously set class="intro" on a few previous elements, so we can reuse the same code. We do need to define the class on each element, but this means we don't need to add the intro class into the CSS file.
+		I wanted to separate each element so that the different options could be clearly differentiated, so I decided to add some text dividers. These dividers are going to be different blocks of colour, however, later on I may add some graphics to seperate the two colours. I chose two alternating colours, which are featured on the main page, so there is consistency in the website. The below shows the two different colours (intro and intro2) set as the class. I had previously set class="intro" on a few previous elements, so we can reuse the same code. I do need to define the class on each element, but this means I don't need to add the intro class into the CSS file.
 
 		</p>
 		<br>
@@ -757,7 +757,7 @@
 		</div>
 		<br>
 		<p>
-		From this code,	it doesn't look like the colour will change. Unless we add some CSS, the colour will not match the website. Here's the CSS we require below:
+		From this code,	it doesn't look like the colour will change. Unless I add some CSS, the colour will not match the website. Here's the CSS I require below:
 		</p>
 		<br />
 		<div class="boxed">
@@ -789,7 +789,7 @@
 		</div>
 		<br />
 		<p>
-		As you can see, we didn't make many changes to the intro2 class, compared to the intro class that we previously used, except for the background colour. This means we can use intro and intro 2 alternatively in order to seperate each element and making it easier to read the webpage.
+		As you can see, I didn't make many changes to the intro2 class, compared to the intro class that I previously used, except for the background colour. This means I can use intro and intro 2 alternatively in order to seperate each element and making it easier to read the webpage. Here's the result of the code I added:
 		</p>
 	</div>
 	
@@ -812,28 +812,131 @@
 	<div class="intro2">
 		<h3 class="h3" id=testing>Web Development: Testing and Auditing</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
-			Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et.
+			In order to ensure every element I have added to my website is functioning correctly, I decided to complete an audit on all elements featured in this production log. This is so I can fix and amend any elements that affects the users experience when accessing the website. The table I have created lists the element I am testing, the results I am expecting from the tests and the result I get from these tests. I have also added a row in the table so I understand which elements I nee
 		</p>
+		<!--Audit Table-->
+		<table>
+			<tr>
+			  <th>Element</th>
+			  <th>Expected Result</th>
+			  <th>Result</th>
+			  <th>Review?</th>
+			</tr>
+			<tr>
+			  <td>Main Page - Loading</td>
+			  <td>Webpage should load in under a second.</td>
+			  <td>Webpage loads in <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fleannejade.co.uk%2F&form_factor=desktop" style="color:#3466AA;">0.7 seconds</a>.</td>
+			  <td>No</td>
+			</tr>
+			<tr>
+			  <td>Main Page - Text Dividers</td>
+			  <td>Text dividers should be different alterative colours, with gaps between the element and the divider's edge.</td>
+			  <td>Text dividers are different alterative colours (grey, black, grey), with large gaps between the element and the divider's edge.</td>
+			  <td>No</td>
+			</tr>
+			<tr>
+			  <td>Main Page - Scroll</td>
+			  <td>The scroll bar should be visible, can the mouse wheel can also be used to scroll.</td>
+			  <td>The scroll bar is visible on the right hand side of the page, and can be dragged with the mouse, or can be scrolled with the mouse's wheel.</td>
+			  <td>No</td>
+			</tr>
+			<tr>
+			  <td>Main Page - The Header</td>
+			  <td>The header states my name, and the tuubjects that would be featured on the website's main page. It should span the whole length of the page, but should only cover the top 10% of the page. The header colour should be black, with white text.</td>
+			  <td>The header colour is black, with white text. The header covers the length of the page, with the correct text, however the header is more than 10% of the page. This means it covers up text which should be visible on the main page.</td>
+			  <td>Yes - I need to amend the header size.</td>
+			</tr>
+			<tr>
+			  <td>Main Page - The Big Picture</td>
+			  <td>The main picture needs to match the colour scheme, but stand out. It needs to be aligned to the centre of the webpage and have equal padding on each side. Picture needs to be royalty-free, or owned.</td>
+			  <td>The main picture matches the black and grey colour scheme, but also stands out as image to introduce users to the website. The picture is aligned to the centre of the webpage and has equal padding on each side. The picture had been taken by myself, so the content is original and no costs were incurred.</td>
+			  <td>No</td>
+			</tr>
+			<tr>
+			  <td>Main Page - About Me</td>
+			  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.</td>
+			  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.</td>
+			  <td>No</td>
+			</tr>
+			<tr>
+				<td>Main Page - Picture Options</td>
+				<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.</td>
+				<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.</td>
+				<td>No</td>
+			</tr>
+			<tr>
+				<td>/professionalapprenticeships - Loading</td>
+				<td>Webpage should load in under a second.</td>
+				<td>Webpage loads in <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fleannejade.co.uk%2Fprofessionalapprenticeships&form_factor=desktop" style="color:#3466AA;">0.7 seconds</a>.</td>
+				<td>No</td>
+			</tr>
+			<tr>
+				<td>/professionalapprenticeships - Text Dividers</td>
+				<td>Text dividers should be different alterative colours, with gaps between the element and the divider's edge.</td>
+				<td>Text dividers are different alterative colours (grey, black, etc), with large gaps between the element and the divider's edge.</td>
+				<td>No</td>
+			</tr>
+			<tr>
+				<td>/professionalapprenticeships - Scroll</td>
+				<td>The scroll bar should be visible, can the mouse wheel can also be used to scroll.</td>
+				<td>The scroll bar is visible on the right hand side of the page, and can be dragged with the mouse, or can be scrolled with the mouse's wheel.</td>
+				<td>No</td>
+			</tr>
+			<tr>
+				<td>/professionalapprenticeships - The Header</td>
+				<td>The header states my name, and the tuubjects that would be featured on the website's main page. It should span the whole length of the page, but should only cover the top 10% of the page. The header colour should be black, with white text.</td>
+				<td>The header colour is black, with white text. The header covers the length of the page, with the correct text, however the header is more than 10% of the page. This means it covers up text which should be visible on the main page.</td>
+				<td>Yes - I need to amend the header size.</td>
+			</tr>
+			<tr>
+				<td>/professionalapprenticeships - Contents</td>
+				<td>Each link in the content should allow you to hover and click, taking you to it's part of the page. The links should take you to the correct part of the page, with the top of the divider being flush with the bottom edge of the header. Each link will need to be tested, and any links that do not work correctly will need to be flagged and amended.</td>
+				<td>After testing each link, they all sucessfully allow me to hover and click, and takes me to the correct part of the page. The top of the divider is not flush with the bottom edge of the header, however there is enough space between each piece of text and the header. I do not believe I need to amend the spacing at this time, however if issues do arise due to the placement of these elements, I will review this.</td>
+				<td>No</td>
+			</tr>
+		  </table>
+		  <br />
+		  <br />
+		  <div class="casestudy">
+			<img src="img/pa/chlogo.png" alt="Cloud Heroes">
+			<p>
+				We received an email recently from Wiltshire Police for a DNS change. Once we entered the email contents into our ticketing system, we need to make sure that the request is coming from the account holder, or another person that the account holder has authorised. If the request did not come either of the above, we need confirmation from them to make the changes for security purposes. The request came from the account holder, so we can complete the changes.
+				<br>
+				<br>
+				Wiltshire Police have a different system than outlined above, which is more secure compared to Plesk. Access is only allowed for Cloud Heroes, so we are required to make the changes on their behalf. The change is very similar to Plesk, however this system has 3 name servers whereas Plesk has 2. This can make it longer for all 3 to sync the changes. We can check if the changes have been completed via a tool called <a href="https://mxtoolbox.com/SuperTool.aspx" style="color:#3466AA;">MXToolbox</a>. This website allows you to check if certain records have synced correctly, and is used constantly here at Cloud Heroes. Once we are happy that the records can be seen and are synced, we can go back to the customer and confirm the changes have been completed. 
+				<br>
+				<br>
+				When contacting customers outside of the ticketing system, we need to update the ticket manually. We reply to the email and copy the contents into the ticket we opened earlier. We also copy the ticket number, and add this to the end of the subject. This will allow us to have good record keeping, in case we need to retrieve the ticket in the future.
+				<br>
+				<br>
+				<br>
+				<br>
+				In the Occupational Brief, this covers:
+				<br>
+				<br>
+				Communication: Although we do not hear from them often, they usually send important details via e-mail, so that we don’t make incorrect changes. We usually receive a phone call to check for updates, or if there are any issues with the changes. 
+				<br>
+				<br>
+				Security: Their DNS is held on a more secure server, as they are a .gov.uk domain holder. This process is different, as it requires access to a different DNS server compared to other customers. Because they’re on a secure server, access is limited to Cloud Heroes, so they are unable to self-serve. We require a main contact for the organisation, so changes can be requested by them for security. This protects the organisation from any DNS changes made by a person that they have not approved.
+				<br>
+				<br>
+				Problem solving: We must be compliant with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards. We use a 3rd party tool to check, test and diagnose issues with DNS propagation. 
+				<br>
+				<br>
+				Workflow Management: Although we do not receive these requests frequently, all DNS requests require tickets and need allocating. DNS changes only require one person but may require another for a second opinion if there are any issues. This would mean working with a colleague to find a solution to an issue.
+				<br>
+				<br>
+				Performance: In this situation, we are making DNS changes, which will be held on a shared system. This will be using a GUI, or a piece of software installed onto a server to make it easier for the user to navigate around.
+				<br>
+				<br>
+			</p>
+			<br />
+		</div>
 	</div>
-	
-
-
-<!--WEB DEVELOPMENT: REVIEW-->
-	
-	<div class="intro">
-		<h3 class="h3" id=review>Web development: Review</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
-			Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et.
-		</p>
-	</div>
-
-
 
 <!--WEB DEVELOPMENT: FTP PROTOCOL-->
 
-	<div class="intro2">
+	<div class="intro">
 		<h3 class="h3" id=ftp>Web Development: FTP Protocol</h3>
 		<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
@@ -845,7 +948,7 @@
 
 <!--WEB DEVELOPMENT: SSL INSTALLATION-->
 	
-	<div class="intro">
+	<div class="intro2">
 		<h3 class="h3" id=ssl>Web development: SSL Installation</h3>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
@@ -857,7 +960,7 @@
 
 <!--IMAP/POP3 MAILBOX SETUP-->
 	
-	<div class="intro2">
+	<div class="intro">
 		<h3 class="h3" id=email>IMAP/POP3 Mailbox Creation and Setup</h3>
 		<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
@@ -865,5 +968,15 @@
 		</p>
 	</div>
 
+
+<!--REVIEW-->
+	
+<div class="intro2">
+	<h3 class="h3" id=review>Review</h3>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
+		Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et.
+	</p>
+</div>
 </body>
 </html>

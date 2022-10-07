@@ -152,6 +152,11 @@ a {
 	color: #3466AA
 }
 
+.casestudy h3{
+	color: #3466AA;
+	font-weight:bold;
+}
+
 /*#casestudy img {
 	max-width: 200%;
 	max-height: 200%;

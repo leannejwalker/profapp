@@ -32,11 +32,9 @@
 <!--HEADERS-->
 
 <div class="header">
-    <h1>Jade<br>
-    Walker</h1>
-    <h1 id="undertext">Photography | Technology</h1>
-  </div>
-
+    <h1>Jade<br>Walker</h1>
+	<h1 id="undertext">Photography | Technology</h1>
+</div>
   <div class="intro" id="top">
     <h3>Contents</h3>
   <nav>
@@ -87,10 +85,10 @@
   <div class="intro">
     <h3 class="h3" id=setup>Setting up a hosting account</h3>
 	<p>To create a hosting account for the website, I used Plesk, which is a hosting control panel. I will need to create a customer account to set up my domain and create a platform for my website. It will also allow me to complete tasks such as setting up FTP access and applying SSLs. I created a new customer account by pressing “Add a customer”.
-		<img src="img/pa/1/1.1.png" width="712" height="auto" alt="Add a Customer">
+		<img src="img/pa/hosting/1.png" width="712" height="auto" alt="Add a Customer">
 		<br>
 	The first set of details are for accessing the customer account in Plesk. The second set of details are for the domain subscription. This sets up a set of properties for the website. 
-		<img src="img/pa/1/1.2.png" alt="Customer details">
+		<img src="img/pa/hosting/2.png" alt="Customer details">
 		<li>
 	Domain name: - This is where I will input the domain name I will be using for the website: leannejade.co.uk. When loading a website, the users computer will access the server via the IP, not the domain name. As IPs can be difficult to remember, the DNS (Domain Name System) translates the IP into a domain name. An example of this is Google. To access google.com, you can type google.com in the address bar. Alternatively, you could type in 142.250.186.142 or 142.250.186.164.
 		</li>
@@ -110,7 +108,7 @@
 	</p>
 	<p>
 	I have now created my customer account.
-	<img src="img/pa/1/1.3.png" alt="Customer details">
+	<img src="img/pa/hosting/3.png" alt="Customer details">
 	</p>
 	<br>
 	<div class="casestudy">
@@ -141,11 +139,11 @@
 	To change this, I will need to open both the DNS settings on Plesk, and the DNS settings on Namecheap. 
 	<br>
     <br>
-	<img src="img/pa/2/2.1.png" alt="DNS settings">
+	<img src="img/pa/dns/1.png" alt="DNS settings">
 	The name server is listed as an NS record in the DNS settings. This is the only record I need to copy onto the DNS settings on the domain registrar. 
 	<br>
     <br>
-	<img src="img/pa/2/2.2.png" alt="NS Records">
+	<img src="img/pa/dns/2.png" alt="NS Records">
 	<li>
 	The name server is listed as an NS record in the DNS settings. The host will be an @ as the @ symbol represents the current domain name. Alternatively, I could add the domain name as the host (leannejade.co.uk).
 	</li>
@@ -204,7 +202,7 @@
    <h3 class="h3" id=webdes>Website design and layout</h3>
 	<p>
 	As the website will be a portfolio, I will be creating a site that is simple and easy to navigate. I will be using HTML, PHP and CSS. It will include a basic colour palette, so that the website looks professional and slick. The colours on the website will be in hex so that it can work with HTML, PHP and CSS. Hex colour codes start with #. 
-		<img src="img/pa/3/3.1.png" alt="Main page">
+		<img src="img/pa/design/1.png" alt="Main page">
 	On the landing page, I will have a large header, in faded light grey (#758799), with my name as the header. I would like the header text to be in Roboto, which is a Google Font.
 	<br><br>
 	I could add a navigation bar at the top of the webpage, so that the user can access the different pages, however I feel that it would make the webpage more complicated and would move away from the slick design.  Instead, I chose to have the URLs to different webpages underneath the picture. 
@@ -212,7 +210,7 @@
 	I am debating whether I should have one set picture in the middle of the webpage, or if I should have a slideshow, where multiple pictures are viewed in a set order. If I were to go with this option, I could either choose a manual slide show, where the user would have to press buttons to be able to see each picture, or automatic, where the pictures are viewed on a timer. 
 	<br><br>
 	The pictures underneath the large picture element will be used as URLs, to navigate to the different portfolios I have. The pictures will be of the portfolio or an element of the portfolio linked. The URL to the portfolio is the picture, so no matter where the user clicks on the picture, the URL will load that webpage. 
-		<img src="img/pa/3/3.2.png" alt="Next page">
+		<img src="img/pa/design/2.png" alt="Next page">
 	When the URL is clicked on, it will send the user to the portfolio that the picture represents. 
 	An example portfolio webpage is a simple design with the same title style, however with different text. Each page will have the title of the portfolio so that the user knows which page they have gone to. 
 	<br><br>
@@ -246,7 +244,7 @@
 	 <p>The first step is to create the files and folders where the website will be built in. I created a main folder called “leannejade.co.uk” and created a file called “index.html”. This is where the landing page will be. If the file had a different name to “index.html”, it would not be recognised by the server as the main page, and there would be an error. I also created a file called css, which I will be using later. I opened the html file in Notepad ++ and started building the first page of the website.
 	 <br>
 	 <br>
-	 <img src="img/pa/4/4.1.png" alt="The making of index.html">
+	 <img src="img/pa/start/1.png" alt="The making of index.html">
 	 <br>
 	 To start the webpage, I need to set the doctype declaration. When the page is open, this line of code tells the browser what language the code is written in. This then allows the browser to translate the code into readable text. All HTML webpages need the doctype declaration. 
 	 The second line of code defines the language or country combination that the text is written in. 
@@ -285,11 +283,11 @@
 	 How it is time to see how the website looks.
 	 <br>
 	 </p>
-	 <img src="img/pa/4/4.5.png" alt="Tab">
-	 <img src="img/pa/4/4.6.png" alt="Website preview">
+	 <img src="img/pa/start/2.png" alt="Tab">
+	 <img src="img/pa/start/3.png" alt="Website preview">
 	 <p>
 	 The page title shows on the tab bar. This is exactly what I wanted. Other than adding a logo next to my name, no further action is needed on that element of the site. However, when looking at the webpage, I can see that the text sits to the left of the page and is quite small. As well as the header not being correct, I am also missing the band of colour at the top. This is because I have yet to create a CSS file and style them both.
-	 <img src="img/pa/4/4.7.png" alt="Making of custom.css">
+	 <img src="img/pa/start/4.png" alt="Making of custom.css">
 	 In my CSS folder I made previously, I have created a custom.css file. This is the file I had linked back in the &lthead&gt; tag. CCS means “Cascading Style Sheet” and means that any styles in the file are used across the site. For example, if I have a paragraph (&ltp&gt;) with a font of 12px in the style sheet, every piece of text inside a &ltp&gt; tag across the site will have 12px font.
 	 <br><br>
 	 Firstly, I wanted the h1 tag, which holds my text, to be centred. ‘text-align’ is a CSS style which moves any text with the style applied to any position on the page. ‘text-align: center’ means that the text will be in the centre of the page.
@@ -304,7 +302,7 @@
 	 <br>
 	 Now, lets go back to view the page to see what happens.
 	 </p>
-	 <img src="img/pa/4/4.9.png" alt="Website preview">
+	 <img src="img/pa/start/5.png" alt="Website preview">
 	 <p>
 	 Although I can see that the text is in the middle of the page, it is quite difficult to read. The default is 2em, but I would like it to be 4em. Em is a unit of text size. To change the text size, I need to go into the h1 tag again in the style sheet and add another attribute. ‘font-size’ is the size of the font and will recognise many different units of length including px, em and percentages. 
 	 <br><br>
@@ -315,7 +313,7 @@
 		 <span class="tagcolor" style="color:black">: center;</span><br>&nbsp;&nbsp;&nbsp;font-size
 		 <span class="tagcolor" style="color:black">: 4em;</span><br></span>&rbrace;</span></span>
 	 </div>
-	 <img src="img/pa/4/4.11.png" alt="Website preview">
+	 <img src="img/pa/start/6.png" alt="Website preview">
 	 <p>
 	 Now that I had gotten the basics out of the way, I decided to go ahead and start making the website look more appealing.
 	 </p>
@@ -416,7 +414,7 @@
 	<br>
 	Now the page should have a fixed header with my name and and text underneath it. 
 	</p>
-	<img id=picborder src="img/pa/view/header.PNG" alt="This is the website header.">
+	<img id=picborder src="img/pa/header/1.PNG" alt="This is the website header.">
 	<br>
 	</div>
 	 
@@ -467,7 +465,7 @@
 		<br>
 		This should now have a photo at the top of the page. 
 		</p>
-		<img id=picborder src="img/pa/4/4.15.png" alt="This is the website header."><br>
+		<img id=picborder src="img/pa/picture/1.png" alt="This is the website header."><br>
 	</div>
 
 
@@ -510,14 +508,15 @@
 		<br>
 		Now I should have a section of the website with an "About Me" section.
 		</p>
-		<img id=picborder src="img/pa/4/4.16.png" alt="This is the About Me page."><br /><br />
+		<img id=picborder src="img/pa/me/1.png" alt="This is the About Me page."><br /><br />
 		<div class="casestudy">
 			<img src="img/pa/chlogo.png" alt="Cloud Heroes">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.
+				At Cloud Heroes, we back all systems up to a remote server in the event of a disaster recovery event. We use a service called Acronis, which uses a mixture of data retention and cyber security to keep systems safe and secure. We were in the process from migrating from another backup software which did not fit the needs of the company or the customers we have, and I was requested by the CTO to complete research about Acronis to see if it is a better fit. My research is linked <a href="f/acronis-research.pdf" target=”_blank”
+				style="color:#3466AA;">here</a>.
 				<br>
 				<br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. 
+				The company decided that switching to Acronis would benefit the company, and I was tasked to move all servers and VPS' we ran both internally and for customers over to the new service. Unfortunately, midway though the move with one of our customers' VPS', I encountered some issues. I communicated with the CTO, who provided me with information he had regarding the error I had received, and advised me to contact the supplier. I decided to set up a meeting with our Account Manager over at Acronis to see if they had any information to provide. Our Account Manager described the error with me, and what may have caused it. He also assisted me in the resolution via a remote connection, and verbalized the process which he went through to stop the error and allow the VPS to complete a full backup. With the information both the CTO and the Account Manager provided, I have been able to fix this particular error that has come up many times while I have been at Cloud Heroes.
 				<br>
 				<br>
 				<br>
@@ -525,19 +524,19 @@
 				In the Occupational Brief, this covers:
 				<br>
 				<br>
-				Communication: *
+				Communication: We do not hear from Acronis in regards to their software. We are usually the ones to start a support ticket or an email ticket with them.
 				<br>
 				<br>
-				Security: *
+				Security: The CTO has a main account to manage all servers and VPS' backups. The support team have access to most servers and VPS' except any company that has a support contract or out of hours support, which the CTO completes. This process meets the companies standards and Cyber Essentials, as there is restricted access depending on company roles. This is to protect our end customers and their data.
 				<br>
 				<br>
-				Problem solving: *
+				Problem solving: We must be compliant with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards. Any issues will be passed confidentially over to the necessary parties internally via email or an internal ticket, unless resouces are exhausted and we require assistance from the supplier.
 				<br>
 				<br>
-				Workflow Management: *
+				Workflow Management: We only receive these types of errors rarely, so they are allocated to the person who has the knowledge to complete the task efficiently. Tasks like this may require more than one person depending on the error.
 				<br>
 				<br>
-				Performance: *
+				Performance: Depending on the server, it can either be shared or dedicated. Servers that hold VPS' may have many running at one time. Acronis can be accessed by a GUI, however some servers and/or VPS' are both on Windows (GUI) and Linux (CLI).
 				<br>
 				<br>
 			</p>
@@ -650,7 +649,7 @@
 		<br>
 		The website should now hold the three photos as links to their respective pages. 
 		</p>
-		<img id=picborder src="img/pa/4/4.17.png" alt="This is the About Me page."><br>
+		<img id=picborder src="img/pa/links/1.png" alt="This is the About Me page."><br>
 	</div>
 	
 
@@ -659,7 +658,7 @@
 
 	<div class="intro2">
 		<h3 class="h3" id=preview>Preview of Main Page</h3>
-		<img id=picborder src="img/pa/4/preview.png" alt="A preview of the main page.">
+		<img id=picborder src="img/pa/preview.png" alt="A preview of the main page.">
 		<p>
 		<br>
 		This is a preview of the main page of the website. I'm very happy with the progress I have made so far. The best part of the website is the header, as it's stuck in place, even when the user scrolls down. If I had to improve the website, I would add a picture carousel. It could either have a timer that moves from one photo to another, or two buttons either side in order for the user to change the photo themselves. I would also add a border around the photos, so that the photos are clearer. 
@@ -677,7 +676,7 @@
 		<p>
 		In order to create another webpage, I need to create another file. I decided to duplicate the 'index.html' file, and remove anything I didn't need. I kept the text I added in "Getting Started", and "The Header", as I want them to be seen on the new webpage. I named the file 'pa.html', short for Professional Apprenticeships. 
 		</p>
-		<img id=picborder src="img/pa/5/5.1.png" alt="This is the contents." style="width:50%">
+		<img id=picborder src="img/pa/contents/1.png" alt="This is the contents." style="width:50%">
 		<p>
 		The next thing I needed to do was to create the contents box. This will allow the user to jump to each header, instead of scrolling through the text. Each title will have a link which will directly jump to the specific header. 
 		</p>
@@ -822,7 +821,7 @@
 		<p>
 		As you can see, I didn't make many changes to the intro2 class, compared to the intro class that I previously used, except for the background colour. This means I can use intro and intro 2 alternatively in order to seperate each element and making it easier to read the webpage. Here's the result of the code I added:
 		</p>
-		<img id=picborder src="img/pa/7/1.png" alt="Text dividers">
+		<img id=picborder src="img/pa/divides/1.png" alt="Text dividers">
 	</div>
 	
 
@@ -920,14 +919,14 @@
 			</tr>
 			<tr>
 			  <td>Main Page - About Me</td>
-			  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.</td>
-			  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.</td>
+			  <td>Text in the About Me section requires a header which labels the paragraph. The header will need to be bigger than the text in order to stand out. The paragraph will describe myself, similar to a cover letter.</td>
+			  <td>Text in the About Me section has a header which is suitable for the text below. The header is large enough to stand out from the text. The paragraph describes myself, and introduces the website.</td>
 			  <td>No</td>
 			</tr>
 			<tr>
 				<td>Main Page - Picture Options</td>
-				<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.</td>
-				<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.</td>
+				<td>Each picture will represent the linked page well, match the colour scheme and stand out from the background. The pictures will be in rows, with 3 pictures in one row, and have equal padding on each side. All pictures needs to be royalty-free, or owned.</td>
+				<td>Each picture represents the linked page adequately, matches the colour scheme and stands out from the background. The pictures are in one row, and have equal padding on each side. All pictures had been taken by myself, so the content is original and no costs were incurred.</td>
 				<td>No</td>
 			</tr>
 			<tr>
@@ -1029,9 +1028,21 @@
 		<h3 class="h3" id=email>IMAP/POP3 Mailbox Creation and Setup</h3>
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
-		Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et.	
+		</p>
+		<p>
+		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		</p>
+		<p>
+		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		</p>
+		<p>
+		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		</p>
+		<p>
+		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		</p>
+		<p>
+		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
 		<br />

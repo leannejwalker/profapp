@@ -30,22 +30,6 @@ h2{
 	z-index:1;
 	
 }
-
-ul {
-	text-align:center;
-	margin-right: 3em;
-	list-style: none;
-	columns: 2;
-	-webkit-columns: 2;
-	-moz-columns: 2;
-	font-family: Roboto;
-	font-size:1.75em;
-	padding: 2em;
-	padding-top: 7em;
-	margin: -1em;
-}
-
-
 #undertext{
 	font-size:0.8em;
 } 
@@ -113,10 +97,28 @@ h3{
 	margin: -1em;
 }
 
+
 p, li{
 	font-size:0.6em;
 	margin-left: 2em;
 	font-family: Roboto;
+}
+ul {
+	text-align:center;
+	margin-right: 3em;
+	list-style: none;
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+}
+
+#top{
+	font-family: Roboto;
+	font-size:1.75em;
+	background: #758799;
+	padding: 2em;
+	padding-top: 7em;
+	margin: -1em;
 }
 
 .columns{

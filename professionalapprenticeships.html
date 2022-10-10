@@ -35,7 +35,7 @@
     <h1>Jade<br>Walker</h1>
 	<h1 id="undertext">Photography | Technology</h1>
 </div>
-<div class="intro2" id="top">
+<div class="grey" id="top">
     <h3>Contents</h3>
   <nav>
     <ul class="columns" data-columns="2">
@@ -76,9 +76,9 @@
   </nav>
 </div>
 
-<!--SETTING UP A HOSTING ACCOUNT-->
+<!--SETTING UP A HOSTING ACCOUNT (with case study)--> 
 
-  <div class="intro">
+  <div class="black">
     <h3 class="h3" id=setup>Setting up a hosting account</h3>
 	<p>To create a hosting account for the website, I used Plesk, which is a hosting control panel. I will need to create a customer account to set up my domain and create a platform for my website. It will also allow me to complete tasks such as setting up FTP access and applying SSLs. I created a new customer account by pressing “Add a customer”.
 		<img src="img/pa/hosting/1.png" width="712" height="auto" alt="Add a Customer">
@@ -124,11 +124,10 @@
 	</div>
   </div>
 
-
   
-<!--DNS PROPAGATION-->
+<!--DNS PROPAGATION (with case study)-->
 
-  <div class="intro2">
+  <div class="grey">
    <h3 class="h3" id=dns>DNS Propagation</h3>
     <p>My next task is to make sure the domain is on the correct name server. Doing this ensures that I will be able to load the website files, hosted on Plesk, from the domain. This will then allow me to load the website files with the domain. At this moment in time, my domain leannejade.co.uk is currently pointing at my domain registrar, Namecheap’s name servers.
 	<br><br>
@@ -190,11 +189,10 @@
 	</div>
   </div>
 
-
   
 <!--WEBSITE DESIGN AND LAYOUT-->
 
-  <div class="intro">
+  <div class="black">
    <h3 class="h3" id=webdes>Website design and layout</h3>
 	<p>
 	As the website will be a portfolio, I will be creating a site that is simple and easy to navigate. I will be using HTML, PHP and CSS. It will include a basic colour palette, so that the website looks professional and slick. The colours on the website will be in hex so that it can work with HTML, PHP and CSS. Hex colour codes start with #. 
@@ -219,11 +217,10 @@
 	<br>
   </div>
 
-
   
 <!--GITHUB-->
 
-  <div class="intro2">
+  <div class="grey">
    <h3 class="h3" id=git>Web development: GitHub</h3>
 	<p>
 		I decided to use GitHub to track changes I made to the website. GitHub is a place where developers can use open-source code, making and tracking changes to both already created code, or new code.  Github will allow me back track at any time, if changes I made were not correct. It will also help me understand other tools that I will need to use along side GitHub. Plesk has the ability to integrate GitHub, so that any changes I make on the website will be shown on GitHub and the website. When coding, I use Visual Studios, that has GitHub built in. Once I have edited the code, I can commit changes, which means the changes have been logged. Once the changes have been logged, I can push any changes to Plesk, which then makes these changes live.
@@ -232,10 +229,9 @@
   </div>
 
 
+<!--WEB DEVELOPMENT: GETTING STARTED (with case study)-->
 
-<!--WEB DEVELOPMENT: GETTING STARTED-->
-
-  <div class="intro">
+  <div class="black">
 	<h3 class="h3" id=gs>Web development: Getting Started</h3>
 	 <p>The first step is to create the files and folders where the website will be built in. I created a main folder called “leannejade.co.uk” and created a file called “index.html”. This is where the landing page will be. If the file had a different name to “index.html”, it would not be recognised by the server as the main page, and there would be an error. I also created a file called css, which I will be using later. I opened the html file in Notepad ++ and started building the first page of the website.
 	 <br>
@@ -353,10 +349,9 @@
    </div>
 
 
-
 <!--WEB DEVELOPMENT: THE HEADER-->
 
-  <div class="intro2">
+  <div class="grey">
   <h3 class="h3" id=head>Web development: The Header</h3>
 	<p>
 	I wanted to make the header look fancy, but not too complicated. With the plan I had, I decided I wanted the header text to be to one side, with some text underneath it. Having a &ltbr&gt; tag between my first and last name seperates the two on different lines, and makes it look more professional. I then added text underneath my name. I had to create an ID called "undertext" in order to change the font size. The ID gives a specific item a different style from the rest of the same items in the same tag. This means no other text in the &lth1&gt; tag will be affected.
@@ -414,11 +409,10 @@
 	<br>
 	</div>
 	 
-
 	
 <!--WEB DEVELOPMENT: THE BIG PICTURE-->
 
-	<div class="intro">
+	<div class="black">
 		<h3 class="h3" id=tbp>Web development: The Big Picture</h3>
 		<p>
 		To create a big picture at the top of the site, I need to include an img tag, along with some attributes.
@@ -465,31 +459,30 @@
 	</div>
 
 
+<!--WEB DEVELOPMENT: ABOUT ME (with case study)-->
 
-<!--WEB DEVELOPMENT: ABOUT ME-->
-
-	<div class="intro2">
+	<div class="grey">
 		<h3 class="h3" id=aboutme>Web development: About Me</h3>
 		<p>
-		The next steps are to create an "About me" box, which should explain how I came to understand everything I learned. 
-		<br>
-		<br>
+		The next steps are to create an "About me" box, which should explain how I came to understand everything I learned. I will only need a small piece of text, &ltp&gt;, with the header, &lth2&gt; above it. This will contain a large paragraph about myself, similar to a cover letter, describing work I've completed and skills I would like to showcase. The whole of the "About Me" box will be held by the &ltdiv&gt; tag. It will also have a class, which means I can style the &ltdiv&gt; box.
+		The &lth2&gt; tag will hold the title, and will be styled differently than the rest of the text on the page.
+		The &ltp&gt; tag, holds the main text.
+		<br />
+		<br />
 		</p>
 		<div class="boxed">
 			<h4>HTML</h4><br><br>
 			<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-			<span class="attributecolor" style="color:red">class</span>="intro"<br>&lth2&gt;<span class="attributecolor" style="color:black"> About Me </span>&lt/h2&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat. Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et. Donec placerat, augue sit amet egestas tristique, purus lacus rutrum orci, sed congue ante urna ut sapien. Etiam nec ex nisl. Sed volutpat erat at justo posuere, ut pharetra nulla tempus. In vehicula venenatis mattis. Nunc maximus venenatis suscipit. Nunc nisl quam, tristique sit amet felis ut, gravida semper turpis. Proin a egestas augue. In faucibus feugiat augue a blandit. Nullam eu leo suscipit, feugiat justo aliquam, tincidunt purus. Aenean sed libero sit amet neque scelerisque ullamcorper non eu felis. Suspendisse potenti. Donec tempor interdum hendrerit. Duis a dignissim ipsum, quis fermentum nibh. Maecenas et tellus arcu. Nunc et feugiat nunc, eu accumsan diam.</span>&lt/p&gt;<br>&lt/div&gt;
+			<span class="attributecolor" style="color:red">class</span>="black"<br>&lth2&gt;<span class="attributecolor" style="color:black"> About Me </span>&lt/h2&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat. Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et. Donec placerat, augue sit amet egestas tristique, purus lacus rutrum orci, sed congue ante urna ut sapien. Etiam nec ex nisl. Sed volutpat erat at justo posuere, ut pharetra nulla tempus. In vehicula venenatis mattis. Nunc maximus venenatis suscipit. Nunc nisl quam, tristique sit amet felis ut, gravida semper turpis. Proin a egestas augue. In faucibus feugiat augue a blandit. Nullam eu leo suscipit, feugiat justo aliquam, tincidunt purus. Aenean sed libero sit amet neque scelerisque ullamcorper non eu felis. Suspendisse potenti. Donec tempor interdum hendrerit. Duis a dignissim ipsum, quis fermentum nibh. Maecenas et tellus arcu. Nunc et feugiat nunc, eu accumsan diam.</span>&lt/p&gt;<br>&lt/div&gt;
 		</div>
 		<br>
 		<p>
-		The whole of the "About Me" box will be held by the &ltdiv&gt; tag. It will also have a class, which means I can style the &ltdiv&gt; box.
-		The &lth2&gt; tag will hold the title, and will be styled differently than the rest of the text on the page.
-		The &ltp&gt; tag, holds the main text.
+		The CSS will be black, so that it could compare with the background colour behind the picture above. I also made sure that the colour of the text had been set to white #ffffff. By adding the text colour into class, text on top of every black segment will be white, and I won't need to add it into the h tags or p tags. In order to get the text to center, I had to add padding and margin to the CSS.
 		</p>
 		<br>
 		<div class="boxed">
 			<h4>CSS</h4><br><br>
-				<span class="tagnamecolor" style="color:red">.intro
+				<span class="tagnamecolor" style="color:red">.black
 				<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
 				<span class="tagnamecolor" style="color:#8B4BBE">font-family
 				<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
@@ -541,10 +534,9 @@
 	</div>
 
 
-
 <!--WEB DEVELOPMENT: THE THREE LINKS-->
 	
-	<div class="intro">
+	<div class="black">
 		<h3 class="h3" id=ttl>Web development: The Three Links</h3>
 		<p>
 		The next steps are to create an "About me" box, which should explain how I came to understand everything I learned. 
@@ -649,10 +641,9 @@
 	</div>
 	
 
-
 <!--WEB DEVELOPMENT: PREVIEW OF MAIN PAGE-->
 
-	<div class="intro2">
+	<div class="grey">
 		<h3 class="h3" id=preview>Preview of Main Page</h3>
 		<img id=picborder src="img/pa/preview.png" alt="A preview of the main page.">
 		<p>
@@ -664,10 +655,9 @@
 	</div>
 
 
+<!--WEB DEVELOPMENT: CONTENTS (with case study)-->
 
-<!--WEB DEVELOPMENT: CONTENTS-->
-
-	<div class="intro">
+	<div class="black">
 		<h3 class="h3" id=contents>Web development: Contents</h3>
 		<p>
 		In order to create another webpage, I need to create another file. I decided to duplicate the 'index.html' file, and remove anything I didn't need. I kept the text I added in "Getting Started", and "The Header", as I want them to be seen on the new webpage. I named the file 'pa.html', short for Professional Apprenticeships. 
@@ -680,7 +670,7 @@
 		<div class="boxed">
 			<h4>HTML</h4><br><br>
 				<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-				<span class="attributecolor" style="color:red">class</span>="intro"<span class="attributecolor" style="color:red">id</span>="top"&gt;<br>&nbsp;&nbsp;&nbsp;&lth3&gt;<span class="tagcolor" style="color:black">Contents</span>&lt/h3&gt;
+				<span class="attributecolor" style="color:red">class</span>="black"<span class="attributecolor" style="color:red">id</span>="top"&gt;<br>&nbsp;&nbsp;&nbsp;&lth3&gt;<span class="tagcolor" style="color:black">Contents</span>&lt/h3&gt;
 				<br>
 				&ltnav&gt;
 				<br>
@@ -720,7 +710,7 @@
 					<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
 					<span class="tagcolor" style="color:black">: 0.7em;</span><br>&nbsp;&nbsp;&nbsp;text-align
 					<span class="tagcolor" style="color:black">: center;</span></span><br>&rbrace;</span></span><br><br>
-					<span class="attributecolor" style="color:red">.intro
+					<span class="attributecolor" style="color:red">.black
 					<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
 					<span class="tagnamecolor" style="color:#8B4BBE">font-family
 					<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
@@ -794,26 +784,25 @@
 	</div>
 
 
-
 <!--WEB DEVELOPMENT: TEXT DIVIDERS-->
 
-	<div class="intro2">
+	<div class="grey">
 		<h3 class="h3" id=text>Web Development: Text Dividers</h3>
 		<p>
-		I wanted to separate each element so that the different options could be clearly differentiated, so I decided to add some text dividers. These dividers are going to be different blocks of colour, however, later on I may add some graphics to seperate the two colours. I chose two alternating colours, which are featured on the main page, so there is consistency in the website. The below shows the two different colours (intro and intro2) set as the class. I had previously set class="intro" on a few previous elements, so we can reuse the same code. I do need to define the class on each element, but this means I don't need to add the intro class into the CSS file.
+		I wanted to separate each element so that the different options could be clearly differentiated, so I decided to add some text dividers. These dividers are going to be different blocks of colour, however, later on I may add some graphics to seperate the two colours. I chose two alternating colours, which are featured on the main page, so there is consistency in the website. The below shows the two different colours (black and grey) set as the class. I had previously set class="black" on a few previous elements, so we can reuse the same code. I do need to define the class on each element, but this means I don't need to add the black class into the CSS file.
 
 		</p>
 		<br>
 		<div class="boxed">
 			<h4>HTML (1st colour option)</h4><br><br>
 			<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-			<span class="attributecolor" style="color:red">class</span>="intro"<br>&lth3&gt;<span class="attributecolor" style="color:black"> Setting up a hosting account </span>&lt/h3&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. </span>&lt/p&gt;<br>&lt/div&gt;
+			<span class="attributecolor" style="color:red">class</span>="black"<br>&lth3&gt;<span class="attributecolor" style="color:black"> Setting up a hosting account </span>&lt/h3&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. </span>&lt/p&gt;<br>&lt/div&gt;
 		</div>
 		<br>
 		<div class="boxed">
 			<h4>HTML (2nd colour option)</h4><br><br>
 			<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-			<span class="attributecolor" style="color:red">class</span>="intro2"<br>&lth3&gt;<span class="attributecolor" style="color:black"> DNS Propagation </span>&lt/h3&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. </span>&lt/p&gt;<br>&lt/div&gt;
+			<span class="attributecolor" style="color:red">class</span>="grey"<br>&lth3&gt;<span class="attributecolor" style="color:black"> DNS Propagation </span>&lt/h3&gt;<br>&nbsp;&nbsp;&ltp&gt; <span class="attributecolor" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. </span>&lt/p&gt;<br>&lt/div&gt;
 		</div>
 		<br>
 		<p>
@@ -822,7 +811,7 @@
 		<br />
 		<div class="boxed">
 			<h4>CSS (1st colour option)</h4><br><br>
-				<span class="tagnamecolor" style="color:red">.intro
+				<span class="tagnamecolor" style="color:red">.black
 				<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
 				<span class="tagnamecolor" style="color:#8B4BBE">font-family
 				<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
@@ -836,7 +825,7 @@
 		<br />
 		<div class="boxed">
 			<h4>CSS (2nd colour option)</h4><br><br>
-				<span class="tagnamecolor" style="color:red">.intro2
+				<span class="tagnamecolor" style="color:red">.grey
 				<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
 				<span class="tagnamecolor" style="color:#8B4BBE">font-family
 				<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
@@ -849,16 +838,15 @@
 		</div>
 		<br />
 		<p>
-		As you can see, I didn't make many changes to the intro2 class, compared to the intro class that I previously used, except for the background colour. This means I can use intro and intro 2 alternatively in order to seperate each element and making it easier to read the webpage. Here's the result of the code I added:
+		As you can see, I didn't make many changes to the grey class, compared to the black class that I previously used, except for the background colour. This means I can use black and grey alternatively in order to seperate each element and making it easier to read the webpage. Here's the result of the code I added:
 		</p>
 		<img id=picborder src="img/pa/divides/1.png" alt="Text dividers">
 	</div>
 	
 
-
 <!--WEB DEVELOPMENT: XAMPP-->
 	
-	<div class="intro">
+	<div class="black">
 		<h3 class="h3" id=xampp>Web development: XAMPP</h3>
 		<p>
 			XAMPP is a compact program that developers use in order to set up a local development enviroment for their website. XAMPP runs on a developers computer, and then can be loaded, similar to loading a file or a picture but allows all features to be used and tested. This means they do not need to upload and make live half completed websites in order to see the development of the website and fix any issues. This also means that if any errors occured on the website when live, the developer can take the website and load it in a local envoriment and troubleshoot.
@@ -869,10 +857,9 @@
 	</div>
 	
 
+<!--WEB DEVELOPMENT: TESTING AND AUDITING (with case study)-->
 
-<!--WEB DEVELOPMENT: TESTING AND AUDITING-->
-
-	<div class="intro2">
+	<div class="grey">
 		<h3 class="h3" id=testing>Web Development: Testing and Auditing</h3>
 		<p>
 			In order to ensure every element I have added to my website is functioning correctly, I decided to complete an audit on all elements featured in this production log. This is so I can fix and amend any elements that affects the users experience when accessing the website. The table I have created lists the element I am testing, the results I am expecting from the tests and the result I get from these tests. I have also added a row in the table so I understand which elements I need to amend and why. If I were to go back and make changes, I will have a clear understanding of what I need to do in order to have a working website, that is user-friendly and readable.
@@ -963,10 +950,17 @@
 		  <div class="casestudy">
 			<img src="img/pa/chlogo.png" alt="Cloud Heroes">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. 
+				At Cloud Heroes, we are always keeping our systems up to date. In order to do this, we complete monthly patching on all systems. Although most patches are feature updates, some patches we install are security updates and we are required to install these, as vulnrabilities are patched. Unfortunately, there are times where an OS has reached end-of-life, and requires a new server to be built in order to support the new and improved OS. This had happened with one of our main web servers, which required a migration of data from one server to another. The main server in question holds over one thousand websites, so the migration task required planning and conversation with co-workers to find the best plan of action. I produced a project plan with the agreed way of working, which was provided to co-workers, and the CTO in order for the plan to be approved.
+				<br />
+				<br />
+				<a href="f/migration-project-plan.pdf" target=”_blank”
+				style="color:#3466AA;">Migration Project Plan</a>
+				<br />
+				<br />
+				I was given the role as Project Manager for this, with my co-workers completing migration work alongside myself for efficiency. If we ran into any issues in migrating a website, for example it was no longer compatible on the new system and changes were required, we could flag the issue with our website developer for assistance. He would then start an investigation on the website, and find the reason and the resolution for the error.
+				<br />
+				<br />
+				At the time of writing, we are migrating the second batch of websites. We have migrated over 300 websites in the space of a year, and are hoping to complete the rest over the next year, as the main system that previously held the website is no longer suitable for the amount of users using and accessing the system on a daily basis. Our next step after this would migrate email services from this same system to a newer system.
 				<br>
 				<br>
 				<br>
@@ -974,29 +968,30 @@
 				In the Occupational Brief, this covers:
 				<br>
 				<br>
-				Communication: *
+				Communication: We do not hear from Acronis in regards to their software. We are usually the ones to start a support ticket or an email ticket with them.
 				<br>
 				<br>
-				Security: *
+				Security: The CTO has a main account to manage all servers and VPS' backups. The support team have access to most servers and VPS' except any company that has a support contract or out of hours support, which the CTO completes. This process meets the companies standards and Cyber Essentials, as there is restricted access depending on company roles. This is to protect our end customers and their data.
 				<br>
 				<br>
-				Problem solving: *
+				Problem solving: We must be compliant with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards. Any issues will be passed confidentially over to the necessary parties internally via email or an internal ticket, unless resouces are exhausted and we require assistance from the supplier.
 				<br>
 				<br>
-				Workflow Management: *
+				Workflow Management: We only receive these types of errors rarely, so they are allocated to the person who has the knowledge to complete the task efficiently. Tasks like this may require more than one person depending on the error.
 				<br>
 				<br>
-				Performance: *
+				Performance: Depending on the server, it can either be shared or dedicated. Servers that hold VPS' may have many running at one time. Acronis can be accessed by a GUI, however some servers and/or VPS' are both on Windows (GUI) and Linux (CLI).
 				<br>
 				<br>
 			</p>
 			<br />
-		</div>
+			</div>
 	</div>
+
 
 <!--WEB DEVELOPMENT: SSL INSTALLATION-->
 	
-	<div class="intro">
+	<div class="black">
 		<h3 class="h3" id=ssl>Web development: SSL Installation</h3>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
@@ -1005,82 +1000,81 @@
 	</div>
 
 
-
-<!--IMAP/POP3 MAILBOX SETUP-->
+<!--IMAP/POP3 MAILBOX SETUP (with case study)-->
 	
-	<div class="intro2">
+	<div class="grey">
 		<h3 class="h3" id=email>IMAP/POP3 Mailbox Creation and Setup</h3>
 		<p>
-		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website. As well as hosting websites, Plesk can also host mailboxes. This is where I'm creating my new email address.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/1.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/1.png" style="width:50%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/2.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/2.png" style="width:50%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/3.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/3.png" style="width:50%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/4.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/4.png" style="width:50%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/5.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/5.png" style="width:50%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/6.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/6.png" style="width:50%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/7.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/7.png" style="width:50%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/8.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/8.png" style="width:75%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/9.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/9.png" style="width:25%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/10.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/10.png" style="width:25%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/11.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/11.png" style="width:25%" alt="Text dividers">
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
 		<br />
-		<img id=picborder src="img/pa/email/12.png" width="712" height="auto" alt="Text dividers">
+		<img src="img/pa/email/12.png" style="width:25%" alt="Text dividers">
 		<br />
 		<div class="casestudy">
 			<img src="img/pa/chlogo.png" alt="Cloud Heroes">
@@ -1117,9 +1111,9 @@
 	</div>
 
 
-<!--REVIEW-->
+<!--REVIEW (with case study)-->
 	
-<div class="intro">
+<div class="black">
 	<h3 class="h3" id=review>Review</h3>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.

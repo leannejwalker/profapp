@@ -11,23 +11,21 @@
   <script src="js/jquery-3.6.0.js"></script>
 </head>
 <body>
-  <script>
+<script>
+ window.onload = function () {
+    window.scrollTo(0, 0);
+};
 
-        window.onload = function () {
-            window.scrollTo(0, 0);
-        };
-
-				function scrollToElement(element) {
-					const el = document.getElementById(element)
-					const y = el.getBoundingClientRect().top - 166;
-					window.scroll({
-  					top: y,
-  					behavior: 'smooth'
-					});
-				}
-
-			
-  </script> 
+function scrollToElement(element) {
+	const el = document.getElementById(element)
+	const y = el.getBoundingClientRect().
+	top - 166;
+	window.scroll({
+  		top: y,
+  		behavior: 'smooth'
+	});
+}		
+</script> 
 
 <!--HEADERS-->
 
@@ -116,7 +114,7 @@
 		When we first receive the request, we add it to our job system. We then go to the web interface of our web server and create a new hosting account. We first have to set up the user account, adding the details of the new customer Expert Agent has provided us with. We continue with adding the web hosting element to the user account by adding the domain to the hosting account so that the web space is designated to the domain. Once we have added the domain, we can assign a subscription to it. A subscription tells the server how much space a domain can use on the server and can automatically block usage if over the limit or is taking advantage of the Fair Use Policy.<br><br>
 		No DNS or email set-up is required on these, as Expert Agent complete these themselves. We do have to provide login details and FTP details so that Expert Agent can transfer websites to the new hosting account. Passwords are added securely to our customer portal, where they are viewable for 30 days before they are erased from the server. Once Expert Agent have completed this, we install an SSL to ensure the site stays secure.<br><br><br><br>In the Occupational Brief, this covers:<br><br>
 
-			Communication: On a regular basis, I remotely contact Expert Agent, an external company, over e-mail.<br><br>
+			Remote Infrastructure: In most cases, we only require a desktop to complete the set-up. Sometimes we need to point a domain to a new hosting account, we may need to access Nominet or Total Reg, which is where we manage domain names. Total Reg is a single sign-on website, however, Nominet requires MFA (multi-factor authentication). We require an iPad to generate a code via Google Authenticator, which is entered into the website.<br><br>
 			Security: Cloud Heroes have a secure process of sending passwords, which erases them after 30 days. This process meets ISO standards. This is to protect Expert Agent and their end users. We also install an SSL, which adds a layer of security to their websites. This is part of the hosting account setup process, shown above.<br><br>
 			Problem-solving: We must be compliant with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards.<br><br>
 			Workflow Management: We receive these requests daily, so they are allocated to either myself or my colleagues, depending on the work each of us is working on. Setting up a hosting account only requires one person.<br><br>
@@ -178,7 +176,7 @@
 			Security: Their DNS is held on a more secure server, as they are a .gov.uk domain holder. This process is different, as it requires access to a different DNS server compared to other customers. Because they’re on a secure server, access is limited to Cloud Heroes, so they are unable to self-serve. We require a main contact for the organisation, so changes can be requested by them for security. This protects the organisation from any DNS changes made by a person that they have not approved.
 			<br>
 			<br>
-			Problem-solving: We must be compliant with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards. We use a 3rd party tool to check, test and diagnose issues with DNS propagation. 
+			Data: When checking and analysing DNS records, I use a mix of tools. MXToolbox shows the DNS that is currently active, and will help flag any issues with the record. A tool called Security Trails allows you to check past DNS records, which is useful to find out of any unauthorised changes have been made or to retrieve a dropped DNS record. We use both of these daily, as we complete DNS changes fairly often.
 			<br>
 			<br>
 			Workflow Management: Although we do not receive these requests frequently, all DNS requests require tickets and need allocation. DNS changes only require one person but may require another for a second opinion if there are any issues. This would mean working with a colleague to find a solution to an issue.
@@ -525,7 +523,7 @@
 		Problem-solving: We must be compliant with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards. Any issues will be passed confidentially over to the necessary parties internally via email or an internal ticket unless resources are exhausted and we require assistance from the supplier.
 		<br>
 		<br>
-		Workflow Management: We only receive these types of errors rarely, so they are allocated to the person who knows how to complete the task efficiently. Tasks like this may require more than one person depending on the error.
+		Remote Infrastructure: The support team has access to most VPS in Acronis via a desktop, through an account with limited access, however, some VPS require login to the admin account, which our CTO only has access to. If there is a VPS we need to manage that is attached to the CTO's account, we will need to contact the CTO via a phone call to send over the query to him. I will also need authorisation from him to contact Acronis Support, which would also be completed over the phone.
 		<br>
 		<br>
 		Performance: Depending on the server, it can either be shared or dedicated. Servers that hold VPS' may have many running at one time. Acronis can be accessed by a GUI, however some servers and/or VPS' are both on Windows (GUI) and Linux (CLI).
@@ -542,9 +540,8 @@
 <div class="black">
 	<h3 class="h3" id=ttl>Web development: The Three Links</h3>
 	<p>
-	On the website, I have decided to have links to each element that I would like to showcase. In order to make the links look smart, I decided to use relevant pictures to contain them. The three pictures need to be side by side, in a row. In order to do this, I had to set up some 
+	On the website, I have decided to have links to each element that I would like to showcase. In order to make the links look smart, I decided to use relevant pictures to contain them. The three pictures need to be side by side, in a row.
 	</p>
-	<br>
 	<br>
 	<div class="boxed">
 		<h4>HTML</h4><br><br>
@@ -592,10 +589,10 @@
 		<br>&lt/div&gt;
 		</span>	
 	</div>
-	<p>
-	On the website, I have decided to have links to each element that I would like to showcase. In order to make the links look smart, I decided to use relevant pictures to contain them.
-	</p>
 	<br>
+	<p>
+	To ensure the pictures stay side by side, at similar distances apart, I used "width: 30%". This means each picture in the row will only reach 30% width, and only 90% of the row will be taken up with photos. The rest of the space is set as padding, which will allow space between each photo. By putting all pictures inside the row class, they will all be placed in the same row.
+	</p>
 	<br>
 	<div class="boxed">
 			<h4>CSS</h4><br><br>
@@ -764,7 +761,10 @@
 		The support team were receiving alerts via email over 3 days in regards to a failing hard drive at the data centre. This hard drive belonged to one of our internal backup servers, which backed up our in-house intranet, email service and our file sharing server. After monitoring this over the 3 days, we agreed that the server required attention, and the hard drive needed to be replaced.
 		<br>
 		<br>
-		I was tasked to complete this, and I sent an access request over to the data centre. I received the confirmation the same day that I was able to complete the work at the location. Two days later, I went to the data centre with a replacement hard drive that had been purchased by the CTO from a supplier on our approved company supplier list. The 
+		I was tasked to complete this, and I sent an access request over to the data centre. I received the confirmation the same day that I was able to complete the work at the location. Two days later, I went to the data centre with a replacement hard drive that had been purchased by the CTO from a supplier on our approved company supplier list. I had been provided a keycard previously, which allows me access to the data centre, along with a 4 digit code and biometrics for security. I only have access rights to the location of our cabinet for 24 hours, in order to protect both us and other users of the data centre.
+		<br>
+		<br>
+		Once I gained access to our cabinet in the data centre, I had to locate the server. All the servers are labelled either with small stickers or a digital LCD screen, which shows the server's name. The server in question had an LDC screen, which had been flashing red. Usually, the display is blue and only flashes red when there is an issue. With this, I was able to locate the problem drive, as 5 of the 6 drives that were attached had a blue LED next to them, with the faulty drive flashing a red LED. I was able to remove the drive and replace it with the hard drive I had with me. A blue light started to flash, which meant that the drive is trying to rebuild itself, and replicate the failing drive I had removed.
 		<br>
 		<br>
 		<br>
@@ -772,19 +772,19 @@
 		In the Occupational Brief, this covers:
 		<br>
 		<br>
-		Communication: *
+		Communication: We do not receive any contact from the data centre, however, we do require contact with them when we request access to the data centre. We send Purchase Orders via email to our authorised suppliers when we purchase a piece of kit. I received training face-to-face with the CTO in regard to the installation of the new hard drive and data centre standards, expectations and processes.
 		<br>
 		<br>
-		Security: *
+		Security: As the server we are trying to maintain is in a secure data centre, we are required to complete their security process along with our own. If there is an issue with access to the data centre, this will need to be escalated to the security staff. If there is an issue with a server at the data centre, this will need to be escalated to the CTO, who will be able to determine whether he is required to be on-site, or if there is a fix available remotely. The data centre has policies that can be accessed as a physical folder around the building, and our policies in regard to data centre access are freely accessible to the technical team via shared storage.
 		<br>
 		<br>
-		Problem solving: *
+		Problem-solving: We must comply with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards. We also need to comply with data centre guidelines and comply strictly with ISO standards. We use an alert tool which alerts the support team when a service or device goes down, with reasons why this would be. To troubleshoot the service or device, we use either Remote Desktop or an SSH tool called SecureCRT, which allows access to a server or device. We can then complete troubleshooting measures via Windows Control Panel or the Linux terminal.
 		<br>
 		<br>
-		Workflow Management: *
+		Health and Safety: *
 		<br>
 		<br>
-		Performance: *
+		WEEE: *
 		<br>
 		<br>
 		</p>
@@ -1017,107 +1017,45 @@
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website. As well as hosting websites, Plesk can also host mailboxes. This is where I'm creating my new email address.
 		</p>
-		<br />
-		<img src="img/pa/email/1.png" style="width:50%" alt="Text dividers">
-		<br />
+		<img src="img/pa/email/1.png" style="width:70%" alt="Text dividers">
 		<p>
-		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		I went to the Create Email Address page and chose an email address to use. I decided this account I create should have access to the Plesk panel to manage the website, so I enabled that access. I set an external email address, to have a safety net if I forget my password. The password needs to meet minimum requirements (a minimum of 8 characters: 1 uppercase, 1 lowercase, 1 number and 1 special character) and can be generated by the server if a secure password cannot be created manually. You can change the default size of the mailbox, as long as it's below the default size set. I decided to set the default size as 2GB, and I continued with the creation of the account.
 		</p>
-		<br />
-		<img src="img/pa/email/2.png" style="width:50%" alt="Text dividers">
-		<br />
+		<img src="img/pa/email/2.png" style="width:70%" alt="Text dividers">
 		<p>
-		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		I wanted to set up a forward, so if I am unable to check this mailbox, I will still receive emails. I entered my personal address for this. Any emails forwarded on will still be retained in this mailbox for record-keeping purposes.
 		</p>
-		<br />
 		<img src="img/pa/email/3.png" style="width:50%" alt="Text dividers">
-		<br />
 		<p>
-		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		I can also set up email aliases in this portal. An email alias allows me to attach another email address to the account, and all emails are still received by me. This is used so that I can receive emails that go to non-existent generic mailboxes, such as "accounts" or "sales". I do not require this at the moment, but I can amend this again in the future.
 		</p>
-		<br />
 		<img src="img/pa/email/4.png" style="width:50%" alt="Text dividers">
-		<br />
 		<p>
-		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
+		There's an ability to set an auto-reply in Plesk for each mailbox, which is a great feature for out-of-office replies, or auto-replies to send automatic replies about waiting times or key information. This may be something I may use in the future, but I do not require it at this moment in time.
 		</p>
-		<br />
 		<img src="img/pa/email/5.png" style="width:50%" alt="Text dividers">
+		<p>
+		I have now created my mailbox, and I can start to set this up on my preferred device.
+		</p>
+		<img src="img/pa/email/8.png" style="width:85%" alt="Text dividers">
+		<br />
 		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
-		<br />
-		<img src="img/pa/email/6.png" style="width:50%" alt="Text dividers">
-		<br />
-		<p>
-		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
-		</p>
-		<br />
-		<img src="img/pa/email/7.png" style="width:50%" alt="Text dividers">
-		<br />
-		<p>
-		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
-		</p>
-		<br />
-		<img src="img/pa/email/8.png" style="width:75%" alt="Text dividers">
-		<br />
-		<p>
-		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
-		</p>
-		<br />
 		<img src="img/pa/email/9.png" style="width:25%" alt="Text dividers">
-		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
-		<br />
 		<img src="img/pa/email/10.png" style="width:25%" alt="Text dividers">
-		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
-		<br />
 		<img src="img/pa/email/11.png" style="width:25%" alt="Text dividers">
-		<br />
 		<p>
 		Most hosting companies add mailboxes as a free add-on to hosting accounts, so I have decided to set my own mailbox under my domain. This will mean anyone who emails me will be presented with a smart-looking email address, associated with my website.
 		</p>
-		<br />
 		<img src="img/pa/email/12.png" style="width:25%" alt="Text dividers">
-		<br />
-		<div class="casestudy">
-			<img src="img/pa/chlogo.png" alt="Cloud Heroes">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. 
-				<br>
-				<br>
-				<br>
-				<br>
-				In the Occupational Brief, this covers:
-				<br>
-				<br>
-				Communication: *
-				<br>
-				<br>
-				Security: *
-				<br>
-				<br>
-				Problem solving: *
-				<br>
-				<br>
-				Workflow Management: *
-				<br>
-				<br>
-				Performance: *
-				<br>
-				<br>
-			</p>
-			<br />
-		</div>
 	</div>
 
 
@@ -1126,8 +1064,7 @@
 <div class="black">
 	<h3 class="h3" id=review>Review</h3>
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, accumsan quis nunc vel, convallis mollis purus. Quisque ultrices sagittis mi in scelerisque. Donec feugiat euismod magna quis ullamcorper. Maecenas ultrices nisl non nisl feugiat, non bibendum ex sodales. Nam est lectus, vehicula ut efficitur vel, convallis a turpis. Integer feugiat, odio sit amet dignissim eleifend, urna ligula condimentum dui, at venenatis turpis mauris euismod lacus. In sed euismod purus, sit amet egestas mi. Suspendisse vel egestas nisl. Integer ultricies at orci eget suscipit. Sed ullamcorper urna eget velit euismod, non dapibus lacus feugiat.
-		Mauris sodales nulla sit amet lacus sagittis, eget posuere sapien elementum. Sed faucibus risus hendrerit, condimentum massa ut, euismod quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta dui non elit mattis, et lacinia lorem aliquam. Curabitur eu nulla augue. Cras pellentesque volutpat dui elementum ullamcorper. Morbi id felis lorem. Nam ac vulputate massa. Cras ut accumsan ex, non convallis nulla. Curabitur sagittis elementum elit, non facilisis turpis sodales et.
+		I have thoroughly enjoyed making this portfolio, and showing the skills I have learned via building a website. Over the past few years, I have been able to complete tasks that have provided me with the knowledge I used to build the website, alongside study which I have completed outside of the workplace. There are many skills that I could improve on to add more elements to the website, which is my plan for the future. My testing and auditing of the website has shown that there are some elements that are not working correctly, which can be amended after future research. In the future, I would like to further my studies in website development to improve this portfolio and learn more about back-end coding. This will allow me to learn new skills that could assist in a future upgrade to the website.
 	</p>
 	<br />
 	<div class="casestudy">
@@ -1140,11 +1077,16 @@
 			<b>Michelle Walker - Operations Manager:</b>
 			<br><br>
 			Since joining Cloud Heroes in early 2021, Jade has become a highly valued member of the team.  Her confidence has grown significantly, and she has developed a gracious and professional manner when communicating with customers. 
-			Jade is very quick to volunteer for tasks/projects and has demonstrated her ability to be organised and diligent when managing workloads.  She is able to resolve the majority of first-line support requests independently and has recently completed a couple of customer site visits which has resulted in very positive feedback. 
+			Jade is very quick to volunteer for tasks/projects and has demonstrated her ability to be organised and diligent when managing workloads.  She is able to resolve the majority of first-line support requests independently and has recently completed a couple of customer site visits which has resulted in very positive feedback.<br><br><br><br>
+			<b>My thoughts:</b>
+			<br><br>
+			Over the past few years at Cloud Heroes, I have had the privilege of learning particular skills which may not be possible in other businesses. I can take a hands-on approach to most situations and find out how to resolve a real-life query, in a fast-paced environment. I hope to continue assisting users and my colleagues, using the knowledge that I have learned. I would also like to learn new tasks, which could allow me to be more independent in the workplace. I would like to be involved in larger projects, with the ability to learn how to effectively manage a team. 
 
 			<br>
 		</p>
 	</div>
 </div>
+
+
 </body>
 </html>

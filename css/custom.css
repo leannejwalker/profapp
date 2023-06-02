@@ -203,3 +203,13 @@ td, th {
 	padding: 8px;
 }
   
+
+#badge-issuer {
+    color: #fff;
+    font-size: .81rem;
+    font-style: italic;
+    line-height: 1.1em;
+    margin: 0 8px;
+    max-width: 100%;
+    overflow: hidden;
+	text-align: center;

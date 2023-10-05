@@ -214,6 +214,7 @@ td, th {
     max-width: 100%;
     overflow: hidden;
 	text-align: center;
+	background-color: gainsboro;
 }
 #badge-issuer {
     color: #fff;
@@ -224,4 +225,5 @@ td, th {
     max-width: 100%;
     overflow: hidden;
 	text-align: center;
+	background-color: gainsboro;
 }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <title>Jade Walker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://use.fontawesome.com/8b059409f7.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+<div class="black">
+	<h3 class="h3" id=gs>Web development: Getting Started</h3>
+	<p>The first step is to create the files and folders where the website will be built in. I created a main folder called “leannejade.co.uk” and created a file called “index.html”. This is where the landing page will be. If the file had a different name to “index.html”, it would not be recognised by the server as the main page, and there would be an error. I also created a file called CSS, which I will be using later. I opened the HTML file in Notepad ++ and started building the first page of the website.
+	<br>
+	<br>
+	<img src="img/pa/start/1.png" alt="The making of index.html">
+	<br>
+	To start the webpage, I need to set the doctype declaration. When the page is open, this line of code tells the browser what language the code is written in. This then allows the browser to translate the code into readable text. All HTML webpages need the doctype declaration. 
+	The second line of code defines the language or country combination that the text is written in.
+	<br><br>
+	</p>
+	<div class="boxed">
+		<span class="tagnamecolor" style="color:black">&lt!doctype html&gt;<br><span class="tagnamecolor" style="color:mediumblue">&lthtml<span class="attributecolor" style="color:red"> lang</span>="en-gb"&gt;</span></span>
+	</div>
+	<p>
+	<br>
+	The next part of the code is the head tag. This tag holds all the metadata or information of the contents of the webpage. 
+	<br><br>
+	</p>
+	<div class="boxed">
+		<span class="tagnamecolor" style="color:mediumblue">&lthead&gt;<br>&nbsp;&nbsp;&nbsp;&lttitle&gt;
+		<span class="tagcolor" style="color:black">Jade Walker</span>&lt/title&gt;<br>&nbsp;&nbsp;&nbsp;&ltmeta 
+		<span class="attributecolor" style="color:red">charset</span>="utf-8"&gt;<br>&nbsp;&nbsp;&nbsp;&ltmeta&gt;
+		<span class="attributecolor" style="color:red">name</span>="viewport"
+		<span class="attributecolor" style="color:red">content</span>="width=device-width, initial-scale=1"&gt;<br>&nbsp;&nbsp;&nbsp;&ltlink&gt;
+		<span class="attributecolor" style="color:red">rel</span>="stylesheet" 
+		<span class="attributecolor" style="color:red">href</span>="css/custom.css"&gt;<br> &lthead&gt;
+		</span>
+	</div>
+	<p>
+	<br>
+	The first line of the head tag is the page title. This is the text shown on the tab bar at the top of the browser. This identifies what the site is, so if the user changes tabs, they can get to the right one quickly. I chose to create a < div > tag so that I could use the class attribute to give the header and the header text different styles. The h1 tag will hold the header text.
+	<br><br>
+	</p>
+	<div class="boxed">
+		<span class="tagnamecolor" style="color:mediumblue">&ltdiv 
+		<span class="attributecolor" style="color:red">class</span>="header"&gt;<br>&nbsp;&nbsp;&nbsp;&lth1&gt;
+		<span class="tagcolor" style="color:black">Jade Walker</span>&lt/h1&gt;<br>&lt/div&gt;
+	</div>
+	<p>
+	<br>
+	How it is time to see how the website looks.
+	<br>
+	</p>
+	<img src="img/pa/start/2.png" alt="Tab">
+	<img src="img/pa/start/3.png" alt="Website preview">
+	<p>
+	The page title shows on the tab bar. This is exactly what I wanted. Other than adding a logo next to my name, no further action is needed on that element of the site. However, when looking at the webpage, I can see that the text sits to the left of the page and is quite small. As well as the header not being correct, I am also missing the band of colour at the top. This is because I have yet to create a CSS file and style them both.
+	<img src="img/pa/start/4.png" alt="Making of custom.css">
+	In my CSS folder I made previously, I have created a custom.css file. This is the file I had linked back in the &lthead&gt; tag. CCS means “Cascading Style Sheet” and means that any styles in the file are used across the site. For example, if I have a paragraph (&ltp&gt;) with a font of 12px in the style sheet, every piece of text inside a &ltp&gt; tag across the site will have a 12px font.
+	<br><br>
+	Firstly, I wanted the h1 tag, which holds my text, to be centred. ‘text-align’ is a CSS style which moves any text with the style applied to any position on the page. ‘text-align: center’ means that the text will be in the centre of the page.
+	</p>
+	<div class="boxed">
+		<span class="tagnamecolor" style="color:mediumblue">h1
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;&nbsp;
+		<span class="tagnamecolor" style="color:#8B4BBE">text-align
+		<span class="tagcolor" style="color:black">: center;</span><br></span>&rbrace;</span></span>
+	</div>
+	<p>
+	<br>
+	Now, lets go back to view the page to see what happens.
+	</p>
+	<img src="img/pa/start/5.png" alt="Website preview">
+	<p>
+	Although I can see that the text is in the middle of the page, it is quite difficult to read. The default is 2em, but I would like it to be 4em. Em is a unit of text size. To change the text size, I need to go into the h1 tag again in the style sheet and add another attribute. ‘font-size’ is the size of the font and will recognise many different units of length including px, em and percentages.
+	<br><br>
+	</p>
+		<div class="boxed">
+		<span class="tagnamecolor" style="color:mediumblue">h1
+		<span class="attributecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;&nbsp;<span class="tagnamecolor" style="color:#8B4BBE">text-align
+		<span class="tagcolor" style="color:black">: center;</span><br>&nbsp;&nbsp;&nbsp;font-size
+		<span class="tagcolor" style="color:black">: 4em;</span><br></span>&rbrace;</span></span>
+	</div>
+	<img src="img/pa/start/6.png" alt="Website preview">
+	<p>
+	Now that I had gotten the basics out of the way, I decided to go ahead and start making the website look more appealing.
+	</p>
+	<br>
+	<div class="casestudy">
+		<img src="img/pa/chlogo.png" alt="Cloud Heroes">
+		<p>
+			AgencyUK is a company that provides websites using our infrastructure for Hosting Accounts, with SEO and marketing for companies across the UK. <br>
+			<br>
+			A recent order from AgencyUK from us had been a hosting account for a well-known charity. A few days after sending over the details to access their new hosting account and setting them up with a new WordPress website to edit, we received a phone call from their account management team in regards to a potentially malware-stricken website. After analyzing the website, the website files, and any logs that were created by the website, I was able to discover that extra files had been uploaded from an alternate source.
+			<br>
+			<br>
+			The most common vulnerability in WordPress that could be used to upload files is the XML-RCP vulnerability. XML-RPC is a file, included in the base install of WordPress, which allows remote connections to the WordPress website. This allows tools and applications to access the website, such as <a href="https://rss.com/blog/how-do-rss-feeds-work/" style="color:#3466AA;">RSS Feeds</a>. Because this allows remote connections without any authentication, this file can be exploited and used to upload malicious content to the website.
+			<br>
+			<br>
+			After we found this, we completed a restoration of the website. Although the website is a few days old, our infrastructure completes a backup in order to catch any changes. We contacted AgencyUK via email and a follow-up phone call with some advice. In this case, we advise that XML-RPC is disabled on this website and any future website they create. If the file is needed, it can be enabled again. We also advised that they install a WordPress plug-in called WordFence, a security plug-in that detects malicious activity, blocks intrusions, and ensures your WordPress website is secure.
+			<br>
+			<br>
+			<br>
+			<br>
+			In the Occupational Brief, this covers:
+			<br>
+			<br>
+			Communication: This exchange had originally been over the phone, however, any summaries or updates were also sent via email, to ensure AgencyUK had the correct details to inform their customers. Sometimes we are required to talk to their customers as a third party, however, in this case, we were not required to contact their customers.
+			<br>
+			<br>
+			Security: Unfortunately, WordPress isn't the most secure, however, it is one of the best free website builders for inexperienced website designers. We are aware that there is a demand for WordPress-friendly hosting, so we need to have safety features installed alongside our infrastructure. We have a firewall between servers that hold customers' websites and the outside world, to be the first defence in case of an attack. In the event that an attack reaches the website itself, we have an antivirus installed on our web servers to scan website files for malicious code constantly.
+			<br>
+			<br>
+			Problem-solving: We must comply with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards. We use a 3rd party tool to scan for and resolve malware intrusions, along with a backup/restore service as an alternative.
+			<br>
+			<br>
+			Workflow Management: These types of issues are rare, however, these issues are documented thoroughly in tickets. In case the issue becomes more problematic and requires escalating, the ticket needs to include every step both I and the customer completed, with the results of those steps. Escalation would be immediate if any results show that the malware is more widespread, and could affect other websites on the same server.
+			<br>
+			<br>
+			Performance: In this situation, we are investigating and resolving website issues, so we will need to access websites held on a shared system. This will be using a GUI, or a piece of software installed onto a server to make it easier for users to navigate around. Some pieces of software we use are via command line (CLI), are not accessible by users, and can only be accessed by users in the local network. This means me and my co-workers can complete tasks that customers cannot.
+			<br>
+			<br>
+		</p>
+	</div>
+</div>
+</body>
+</html>

@@ -9,6 +9,220 @@
   <script src="https://use.fontawesome.com/8b059409f7.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <script src="js/jquery-3.6.0.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    body {
+      padding-top: 120px; /* space for fixed header */
+    }
+    .header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #000;
+      color: #fff;
+      z-index: 1000;
+      padding: 30px 0 10px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .header h1 {
+      margin: 0 0 0 40px;
+      font-size: 2.8em;
+      letter-spacing: 6px;
+      text-align: left;
+      font-weight: 700;
+    }
+    #undertext {
+      font-size: 1.2em;
+      margin-left: 42px;
+      margin-top: 8px;
+      color: #bbb;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+    .grey, .black {
+      padding: 3em 2em 2em 2em;
+      margin: 0 auto 2em auto;
+      max-width: 1100px;
+      border-radius: 12px;
+      box-sizing: border-box;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .grey {
+      background: #758799;
+      color: #fff;
+    }
+    .black {
+      background: #111;
+      color: #fff;
+    }
+    h3.h3 {
+      margin-top: 0;
+      font-size: 2em;
+      text-align: center;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 0;
+      font-weight: 700;
+    }
+    nav ul.columns {
+      columns: 2 300px;
+      -webkit-columns: 2 300px;
+      -moz-columns: 2 300px;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 700px;
+      list-style: none;
+    }
+    nav ul.columns li {
+      margin-bottom: 0.5em;
+      padding-left: 0;
+      font-size: 1em;
+    }
+    nav ul.columns li a {
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    nav ul.columns li a:hover {
+      color: #e0e0e0;
+    }
+    .casestudy {
+      background: #fff;
+      color: #222;
+      border-radius: 10px;
+      padding: 2em;
+      margin: 2em 0 0 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .casestudy img {
+      max-width: 120px;
+      display: block;
+      margin-bottom: 1em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.5em auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .pictures-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 2%;
+      margin: 2em 0;
+    }
+    .pictures {
+      flex: 1 1 0;
+      background: #222;
+      border-radius: 10px;
+      margin: 0 1%;
+      padding: 1em 0 0.5em 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: center;
+      min-width: 0;
+    }
+    .pictures img.main {
+      max-width: 90%;
+      height: auto;
+      margin: 0 auto 0.5em auto;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .pictures .text {
+      color: #f2f2f2;
+      font-size: 1em;
+      margin-top: 0.5em;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+    .boxed {
+      background: #f8f8f8;
+      color: #222;
+      border-radius: 8px;
+      padding: 1em 1.5em;
+      margin: 1.5em 0;
+      font-size: 0.95em;
+      overflow-x: auto;
+      font-family: 'Roboto Mono', 'Consolas', monospace;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2em 0;
+      background: #fff;
+      color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    th, td {
+      padding: 1em;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+      font-size: 1em;
+    }
+    th {
+      background: #758799;
+      color: #fff;
+      font-weight: 700;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    a {
+      color: #3466AA;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #1a2d4d;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      .grey, .black {
+        padding: 2em 1em 1em 1em;
+      }
+      .pictures-row {
+        flex-direction: column;
+        gap: 1.5em;
+      }
+      .pictures {
+        margin: 0 0 1em 0;
+      }
+    }
+    @media (max-width: 600px) {
+      .header h1, #undertext {
+        margin-left: 10px;
+      }
+      body {
+        padding-top: 100px;
+      }
+      .grey, .black {
+        padding: 1em 0.5em 0.5em 0.5em;
+      }
+      .boxed {
+        padding: 0.7em 0.5em;
+      }
+      table, th, td {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
 <body>
 <script>
@@ -18,8 +232,7 @@
 
 function scrollToElement(element) {
 	const el = document.getElementById(element)
-	const y = el.getBoundingClientRect().
-	top - 166;
+	const y = el.getBoundingClientRect().top + window.scrollY - 130;
 	window.scroll({
   		top: y,
   		behavior: 'smooth'
@@ -28,12 +241,10 @@ function scrollToElement(element) {
 </script> 
 
 <!--HEADERS-->
-
 <div class="header">
     <h1>Jade<br>Walker</h1>
 	<h1 id="undertext">Photography | Technology</h1>
 </div>
-
 
 <div class="grey" id="top">
 	<div style="background-color:#fff;text-align: center;position: absolute;" data-iframe-width="500" data-iframe-height="270" data-share-badge-id="04b7e2f2-a4fb-4dbc-a70f-f39537c66c12" data-share-badge-host="https://www.credly.com"></div>
@@ -491,7 +702,7 @@ function scrollToElement(element) {
 			<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
 			<span class="tagnamecolor" style="color:#8B4BBE">font-family
 			<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
-			<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;colour
+			<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;color
 			<span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background
 			<span class="tagcolor" style="color:black">: #000000;</span><br>&nbsp;&nbsp;&nbsp;padding
 			<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top
@@ -546,51 +757,28 @@ function scrollToElement(element) {
 	On the website, I have decided to have links to each element that I would like to showcase. In order to make the links look smart, I decided to use relevant pictures to contain them. The three pictures need to be side by side, in a row.
 	</p>
 	<br>
-	<div class="boxed">
-		<h4>HTML</h4><br><br>
-		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-		<span class="attributecolor" style="color:red">class
-		</span>="pictures"<span class="attributecolor" style="color:red"> id </span>="pic"&gt;
-		<br>&lta <span class="attributecolor" style="color:red">href</span>="photo.html"&gt;&ltimg <span class="attributecolor" style="color:red"> class</span>="main"<span class="attributecolor" style="color:red"> src </span>="img/world.jpg"<span class="attributecolor" style="color:red"> alt </span>="GCSE Photography 2016-2018"<br>&gt;&lt/a&gt;
-		<br>
-		</span>
-		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-		<span class="attributecolor" style="color:red">class
-		</span>="text"&gt;<br><span class="attributecolor" style="color:black">
-		&nbsp;&nbsp;GCSE Photography<br>
-		&nbsp;&nbsp;2016-2018
-		</span><br>&lt/div&gt;<br>&lt/div&gt;
-		</span>
-		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-		<span class="attributecolor" style="color:red">class
-		</span>="pictures"<span class="attributecolor" style="color:red"> id </span>="pic"&gt;
-		<br>&lta <span class="attributecolor" style="color:red">href</span>="photo.html"&gt;&ltimg <span class="attributecolor" style="color:red"> class</span>="main"<span class="attributecolor" style="color:red"> src </span>="img/light.jpg"<span class="attributecolor" style="color:red"> alt </span>="BTEC Level 3 Extended Diploma in IT"<br>&gt;&lt/a&gt;
-		<br>
-		</span>
-		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-		<span class="attributecolor" style="color:red">class
-		</span>="text"&gt;<br><span class="attributecolor" style="color:black">
-		&nbsp;&nbsp;BTEC Level 3<br>
-		&nbsp;&nbsp;Extended Diploma in IT
-		</span><br>
-		&lt/div&gt;
-		<br>&lt/div&gt;
-		</span>
-		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-		<span class="attributecolor" style="color:red">class
-		</span>="pictures"<span class="attributecolor" style="color:red"> id </span>="pic"&gt;
-		<br>&lta <span class="attributecolor" style="color:red">href</span>="photo.html"&gt;&ltimg <span class="attributecolor" style="color:red"> class</span>="main"<span class="attributecolor" style="color:red"> src </span>="img/world.jpg"<span class="attributecolor" style="color:red"> alt </span>="GCSE Photography 2016-2018"<br>&gt;&lt/a&gt;
-		<br>
-		</span>
-		<span class="tagnamecolor" style="color:mediumblue">&ltdiv
-		<span class="attributecolor" style="color:red">class
-		</span>="text"&gt;<br><span class="attributecolor" style="color:black">
-		&nbsp;&nbsp;Professional Apprenticeships<br>
-		&nbsp;&nbsp;Infrustructure Technician
-		</span><br>
-		&lt/div&gt;
-		<br>&lt/div&gt;
-		</span>	
+	<div class="pictures-row">
+		<div class="pictures" id="pic">
+			<a href="photo.html"><img class="main" src="img/world.jpg" alt="GCSE Photography 2016-2018"></a>
+			<div class="text">
+				GCSE Photography<br>
+				2016-2018
+			</div>
+		</div>
+		<div class="pictures" id="pic">
+			<a href="photo.html"><img class="main" src="img/light.jpg" alt="BTEC Level 3 Extended Diploma in IT"></a>
+			<div class="text">
+				BTEC Level 3<br>
+				Extended Diploma in IT
+			</div>
+		</div>
+		<div class="pictures" id="pic">
+			<a href="photo.html"><img class="main" src="img/world.jpg" alt="Professional Apprenticeships Infrastructure Technician"></a>
+			<div class="text">
+				Professional Apprenticeships<br>
+				Infrastructure Technician
+			</div>
+		</div>
 	</div>
 	<br>
 	<p>
@@ -781,7 +969,7 @@ function scrollToElement(element) {
 		Security: As the server we are trying to maintain is in a secure data centre, we are required to complete their security process along with our own. If there is an issue with access to the data centre, this will need to be escalated to the security staff. If there is an issue with a server at the data centre, this will need to be escalated to the CTO, who will be able to determine whether he is required to be on-site, or if there is a fix available remotely. The data centre has policies that can be accessed as a physical folder around the building, and our policies in regard to data centre access are freely accessible to the technical team via shared storage.
 		<br>
 		<br>
-		Problem-solving: We must comply with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are in accordance with ISO standards. We also need to comply with data centre guidelines and comply strictly with ISO standards. We use an alert tool which alerts the support team when a service or device goes down, with reasons why this would be. To troubleshoot the service or device, we use either Remote Desktop or an SSH tool called SecureCRT, which allows access to a server or device. We can then complete troubleshooting measures via Windows Control Panel or the Linux terminal.
+		Problem-solving: We must comply with Cloud Heroes guidelines to complete tasks, as the Cloud Heroes guidelines are following ISO standards. We also need to comply with data centre guidelines and comply strictly with ISO standards. We use an alert tool which alerts the support team when a service or device goes down, with reasons why this would be. To troubleshoot the service or device, we use either Remote Desktop or an SSH tool called SecureCRT, which allows access to a server or device. We can then complete troubleshooting measures via Windows Control Panel or the Linux terminal.
 		<br>
 		<br>
 		Health and Safety: In completing hardware changes, we need to understand health and safety procedures. We need to complete the correct manual handling when picking up large boxes or items, to protect ourselves from a spinal injury. We also need to comply with HSE's DSA regulations, which are regulations regarding display screen equipment implemented daily. This includes daily screen time, screen brightness and chair positioning.
@@ -826,12 +1014,14 @@ function scrollToElement(element) {
 		<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
 		<span class="tagnamecolor" style="color:#8B4BBE">font-family
 		<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
-		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;colour
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;color
 		<span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background
 		<span class="tagcolor" style="color:black">: #000000;</span><br>&nbsp;&nbsp;&nbsp;padding
 		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top
 		<span class="tagcolor" style="color:black">: -15em;</span><br>&nbsp;&nbsp;&nbsp;margin
-		<span class="tagcolor" style="color:black">: -1em;</span></span><br>&rbrace;</span></span><br><br>
+		<span class="tagcolor" style="color:black">: -1em;</span><br>&nbsp;&nbsp;&nbsp;width
+		<span class="tagcolor" style="color:black">: 100%;</span><br>&nbsp;&nbsp;&nbsp;position
+		<span class="tagcolor" style="color:black">: fixed;</span><br></span>&rbrace;</span><br><br>
 	</div>
 	<br />
 	<div class="boxed">
@@ -840,7 +1030,7 @@ function scrollToElement(element) {
 		<span class="tagnamecolor" style="color:black">&lbrace;<br>&nbsp;&nbsp;
 		<span class="tagnamecolor" style="color:#8B4BBE">font-family
 		<span class="tagcolor" style="color:black">: Roboto;</span><br>&nbsp;&nbsp;&nbsp;font-size
-		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;colour
+		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;color
 		<span class="tagcolor" style="color:black">: #ffffff;</span><br>&nbsp;&nbsp;&nbsp;background
 		<span class="tagcolor" style="color:black">: #758799;</span><br>&nbsp;&nbsp;&nbsp;padding
 		<span class="tagcolor" style="color:black">: 2em;</span><br>&nbsp;&nbsp;&nbsp;padding-top
